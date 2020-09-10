@@ -1,0 +1,966 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PocDataset: PocPlot Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="PocPlot Reference Manual">
+<link rel="up" href="Plot.html" title="PocPlot Plot Objects">
+<link rel="prev" href="PocPlot.html" title="PocPlot">
+<link rel="next" href="PocDatasetSpline.html" title="PocDatasetSpline">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#PocDataset.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#PocDataset.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#PocDataset.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#PocDataset.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="Plot.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="PocPlot.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="PocDatasetSpline.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="PocDataset"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="PocDataset.top_of_page"></a>PocDataset</span></h2>
+<p>PocDataset — Dataset for <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="PocDataset.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="PocDataset.html#PocDataset-struct"><span class="returnvalue">PocDataset</span></a> *
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-new">poc_dataset_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-set-nickname">poc_dataset_set_nickname</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-get-nickname">poc_dataset_get_nickname</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-set-legend">poc_dataset_set_legend</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-get-legend">poc_dataset_get_legend</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-get-line-stroke">poc_dataset_get_line_stroke</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-set-line-stroke">poc_dataset_set_line_stroke</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-set-line-style">poc_dataset_set_line_style</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="poc-Poc-Types.html#PocLineStyle"><span class="returnvalue">PocLineStyle</span></a>
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-get-line-style">poc_dataset_get_line_style</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-set-x-axis">poc_dataset_set_x_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-get-x-axis">poc_dataset_get_x_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-set-y-axis">poc_dataset_set_y_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-get-y-axis">poc_dataset_get_y_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-set-points">poc_dataset_set_points</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">PocPointArray</span> *
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-get-points">poc_dataset_get_points</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-notify-update">poc_dataset_notify_update</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-invalidate">poc_dataset_invalidate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-draw">poc_dataset_draw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDataset.html#poc-dataset-set-points-array">poc_dataset_set_points_array</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocDataset.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a href="PocDataset.html#PocDataset--legend">legend</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</td>
+<td class="property_name"><a href="PocDataset.html#PocDataset--line-stroke">line-stroke</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="poc-Poc-Types.html#PocLineStyle"><span class="type">PocLineStyle</span></a></td>
+<td class="property_name"><a href="PocDataset.html#PocDataset--line-style">line-style</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a href="PocDataset.html#PocDataset--nickname">nickname</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">PocPointArray</span> *</td>
+<td class="property_name"><a href="PocDataset.html#PocDataset--points">points</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *</td>
+<td class="property_name"><a href="PocDataset.html#PocDataset--x-axis">x-axis</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *</td>
+<td class="property_name"><a href="PocDataset.html#PocDataset--y-axis">y-axis</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocDataset.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a href="PocDataset.html#PocDataset-update">update</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-NO-HOOKS:CAPS">No Hooks</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocDataset.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a href="PocDataset.html#POC-TYPE-DATASET:CAPS">POC_TYPE_DATASET</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a href="PocDataset.html#PocDatasetClass">PocDatasetClass</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a href="PocDataset.html#PocDataset-struct">PocDataset</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocDataset.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> PocDataset
+        <span class="lineart">╰──</span> <a href="PocDatasetSpline.html#PocDatasetSpline-struct">PocDatasetSpline</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="PocDataset.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;poc.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="PocDataset.description"></a><h2>Description</h2>
+<p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> represents data to be plotted on a <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> canvas.  Any
+number of datasets may be added to a plot.  Each dataset has X and Y axes
+which controls the range of data plotted and allow optionally allow the plot
+to be scrolled.</p>
+<p>Although the dataset contains drawing code, drawing always takes place under
+control of the <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> and on its canvas.</p>
+<p>The <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> base class draws a plot using straight line segments between
+each of the control points, however it may be subclassed for alternative
+plotting algorithms.</p>
+</div>
+<div class="refsect1">
+<a name="PocDataset.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="poc-dataset-new"></a><h3>poc_dataset_new ()</h3>
+<pre class="programlisting"><a href="PocDataset.html#PocDataset-struct"><span class="returnvalue">PocDataset</span></a> *
+poc_dataset_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Create a new <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p>
+<div class="refsect3">
+<a name="poc-dataset-new.returns"></a><h4>Returns</h4>
+<p>New <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-set-nickname"></a><h3>poc_dataset_set_nickname ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_set_nickname (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>,
+                          <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nickname</code></em>);</pre>
+<p>Set the name for the dataset.</p>
+<div class="refsect3">
+<a name="poc-dataset-set-nickname.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nickname</p></td>
+<td class="parameter_description"><p>dataset name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-get-nickname"></a><h3>poc_dataset_get_nickname ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+poc_dataset_get_nickname (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>);</pre>
+<p>Get the name for the dataset.</p>
+<div class="refsect3">
+<a name="poc-dataset-get-nickname.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-dataset-get-nickname.returns"></a><h4>Returns</h4>
+<p>the nickname. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-set-legend"></a><h3>poc_dataset_set_legend ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_set_legend (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>,
+                        <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *legend</code></em>);</pre>
+<p>Set the legend for the dataset item.</p>
+<div class="refsect3">
+<a name="poc-dataset-set-legend.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>legend</p></td>
+<td class="parameter_description"><p>legend text</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-get-legend"></a><h3>poc_dataset_get_legend ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+poc_dataset_get_legend (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>);</pre>
+<p>Get the legend for the dataset item.</p>
+<div class="refsect3">
+<a name="poc-dataset-get-legend.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-dataset-get-legend.returns"></a><h4>Returns</h4>
+<p>legend text. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-get-line-stroke"></a><h3>poc_dataset_get_line_stroke ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_get_line_stroke (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>,
+                             <em class="parameter"><code><a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *rgba</code></em>);</pre>
+<p>Get the colour for stroking plot lines.</p>
+<div class="refsect3">
+<a name="poc-dataset-get-line-stroke.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> to receive the line stroke colour</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-set-line-stroke"></a><h3>poc_dataset_set_line_stroke ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_set_line_stroke (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>,
+                             <em class="parameter"><code>const <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *rgba</code></em>);</pre>
+<p>Set the colour for stroking plot lines.</p>
+<div class="refsect3">
+<a name="poc-dataset-set-line-stroke.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-set-line-style"></a><h3>poc_dataset_set_line_style ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_set_line_style (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>,
+                            <em class="parameter"><code><a href="poc-Poc-Types.html#PocLineStyle"><span class="type">PocLineStyle</span></a> line_style</code></em>);</pre>
+<p>Set the line style for stroking dataset plot lines.</p>
+<div class="refsect3">
+<a name="poc-dataset-set-line-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>line_style</p></td>
+<td class="parameter_description"><p>Requested line style</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-get-line-style"></a><h3>poc_dataset_get_line_style ()</h3>
+<pre class="programlisting"><a href="poc-Poc-Types.html#PocLineStyle"><span class="returnvalue">PocLineStyle</span></a>
+poc_dataset_get_line_style (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>);</pre>
+<p>Get the dataset's line style</p>
+<div class="refsect3">
+<a name="poc-dataset-get-line-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-dataset-get-line-style.returns"></a><h4>Returns</h4>
+<p> a <a href="poc-Poc-Types.html#PocLineStyle"><span class="type">PocLineStyle</span></a></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-set-x-axis"></a><h3>poc_dataset_set_x_axis ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_set_x_axis (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>,
+                        <em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *axis</code></em>);</pre>
+<p>Set the X axis associated with this dataset.</p>
+<div class="refsect3">
+<a name="poc-dataset-set-x-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>a <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-get-x-axis"></a><h3>poc_dataset_get_x_axis ()</h3>
+<pre class="programlisting"><a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+poc_dataset_get_x_axis (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>);</pre>
+<p>Get the X axis associated with this dataset.</p>
+<div class="refsect3">
+<a name="poc-dataset-get-x-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-dataset-get-x-axis.returns"></a><h4>Returns</h4>
+<p>a <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-set-y-axis"></a><h3>poc_dataset_set_y_axis ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_set_y_axis (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>,
+                        <em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *axis</code></em>);</pre>
+<p>Set the Y axis associated with this dataset.</p>
+<div class="refsect3">
+<a name="poc-dataset-set-y-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>a <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-get-y-axis"></a><h3>poc_dataset_get_y_axis ()</h3>
+<pre class="programlisting"><a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+poc_dataset_get_y_axis (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>);</pre>
+<p>Get the X axis associated with this dataset.</p>
+<div class="refsect3">
+<a name="poc-dataset-get-y-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-dataset-get-y-axis.returns"></a><h4>Returns</h4>
+<p>a <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-set-points"></a><h3>poc_dataset_set_points ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_set_points (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>,
+                        <em class="parameter"><code><span class="type">PocPointArray</span> *points</code></em>);</pre>
+<p>Set the array of control points for the dataset.</p>
+<div class="refsect3">
+<a name="poc-dataset-set-points.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>A <span class="type">PocPointArray</span> with the control points</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-get-points"></a><h3>poc_dataset_get_points ()</h3>
+<pre class="programlisting"><span class="returnvalue">PocPointArray</span> *
+poc_dataset_get_points (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>);</pre>
+<p>Get the array of control points for the dataset.</p>
+<div class="refsect3">
+<a name="poc-dataset-get-points.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-dataset-get-points.returns"></a><h4>Returns</h4>
+<p>A <span class="type">PocPointArray</span>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-notify-update"></a><h3>poc_dataset_notify_update ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_notify_update (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-invalidate"></a><h3>poc_dataset_invalidate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_invalidate (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>);</pre>
+<p>Notify subclasses cached data is invalid.</p>
+<div class="refsect3">
+<a name="poc-dataset-invalidate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-draw"></a><h3>poc_dataset_draw ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_draw (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>,
+                  <em class="parameter"><code><span class="type">cairo_t</span> *cr</code></em>,
+                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> width</code></em>,
+                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> height</code></em>);</pre>
+<p>Draw the dataset in the main plot area.  Used by <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a>.</p>
+<div class="refsect3">
+<a name="poc-dataset-draw.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cr</p></td>
+<td class="parameter_description"><p>A <span class="type">cairo_t</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Plot area width</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Plot area height</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-set-points-array"></a><h3>poc_dataset_set_points_array ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_set_points_array (<em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *self</code></em>,
+                              <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x</code></em>,
+                              <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> points</code></em>);</pre>
+<p>Set the array of control points for the dataset. X and Y coordinates
+for each control point are specified in two arrays.</p>
+<div class="refsect3">
+<a name="poc-dataset-set-points-array.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Array of x coordinates. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=points]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Array of y coordinates. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=points]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>number of points in coordinate arrays</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocDataset.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="POC-TYPE-DATASET:CAPS"></a><h3>POC_TYPE_DATASET</h3>
+<pre class="programlisting">#define POC_TYPE_DATASET		poc_dataset_get_type ()
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocDatasetClass"></a><h3>struct PocDatasetClass</h3>
+<pre class="programlisting">struct PocDatasetClass {
+  void		(*draw)		(PocDataset *self, cairo_t *cr,
+			         guint width, guint height);
+  void		(*invalidate) (PocDataset *self);
+};
+</pre>
+<p>The class structure for <a href="PocDataset.html#PocDatasetClass"><span class="type">PocDatasetClass</span></a>.</p>
+<div class="refsect3">
+<a name="PocDatasetClass.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="PocDatasetClass.draw"></a>draw</code></em> ()</p></td>
+<td class="struct_member_description"><p>Method called by <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> to draw visible area of plot.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="PocDatasetClass.invalidate"></a>invalidate</code></em> ()</p></td>
+<td class="struct_member_description"><p>Notify subclasses to invalidate cached data.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocDataset-struct"></a><h3>PocDataset</h3>
+<pre class="programlisting">typedef struct _PocDataset PocDataset;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocDataset.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="PocDataset--legend"></a><h3>The <code class="literal">“legend”</code> property</h3>
+<pre class="programlisting">  “legend”                   <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Legend for the item.</p>
+<p>Owner: PocDataset</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocDataset--line-stroke"></a><h3>The <code class="literal">“line-stroke”</code> property</h3>
+<pre class="programlisting">  “line-stroke”              <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</pre>
+<p>Colour for stroking lines.</p>
+<p>Owner: PocDataset</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocDataset--line-style"></a><h3>The <code class="literal">“line-style”</code> property</h3>
+<pre class="programlisting">  “line-style”               <a href="poc-Poc-Types.html#PocLineStyle"><span class="type">PocLineStyle</span></a></pre>
+<p>Line style for plot line.</p>
+<p>Owner: PocDataset</p>
+<p>Flags: Read / Write</p>
+<p>Default value: POC_LINE_STYLE_SOLID</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocDataset--nickname"></a><h3>The <code class="literal">“nickname”</code> property</h3>
+<pre class="programlisting">  “nickname”                 <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Nickname for the dataset ("nickname" since Glade doesn't like "name").</p>
+<p>Owner: PocDataset</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocDataset--points"></a><h3>The <code class="literal">“points”</code> property</h3>
+<pre class="programlisting">  “points”                   <span class="type">PocPointArray</span> *</pre>
+<p>Array of (X,Y) coordinates.</p>
+<p>Owner: PocDataset</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocDataset--x-axis"></a><h3>The <code class="literal">“x-axis”</code> property</h3>
+<pre class="programlisting">  “x-axis”                   <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *</pre>
+<p>X axis for dataset.</p>
+<p>Owner: PocDataset</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocDataset--y-axis"></a><h3>The <code class="literal">“y-axis”</code> property</h3>
+<pre class="programlisting">  “y-axis”                   <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *</pre>
+<p>Y axis for dataset.</p>
+<p>Owner: PocDataset</p>
+<p>Flags: Read / Write</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocDataset.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="PocDataset-update"></a><h3>The <code class="literal">“update”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *pocdataset,
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-NO-HOOKS:CAPS">No Hooks</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocDataset.see-also"></a><h2>See Also</h2>
+<p><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> <a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>

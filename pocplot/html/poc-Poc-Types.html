@@ -1,0 +1,681 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Poc Types: PocPlot Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="PocPlot Reference Manual">
+<link rel="up" href="Types.html" title="PocPlot Types">
+<link rel="prev" href="Types.html" title="PocPlot Types">
+<link rel="next" href="Other.html" title="PocPlot Internals">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#poc-Poc-Types.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#poc-Poc-Types.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="Types.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="Types.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="Other.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="poc-Poc-Types"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="poc-Poc-Types.top_of_page"></a>Poc Types</span></h2>
+<p>Poc Types — Boxed types and enums used by PocPlot.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="poc-Poc-Types.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-point-array-index">poc_point_array_index</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-point-array-len">poc_point_array_len</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-point-array-append-val">poc_point_array_append_val</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">PocPointArray</span> *
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-point-array-new">poc_point_array_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">PocPointArray</span> *
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-point-array-sized-new">poc_point_array_sized_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">PocPointArray</span> *
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-point-array-set-size">poc_point_array_set_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">PocPointArray</span> *
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-point-array-append-vals">poc_point_array_append_vals</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">PocPointArray</span> *
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-point-array-ref">poc_point_array_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-point-array-unref">poc_point_array_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-double-array-index">poc_double_array_index</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-double-array-len">poc_double_array_len</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-double-array-append-vals">poc_double_array_append_vals</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-double-array-append-val">poc_double_array_append_val</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">PocDoubleArray</span> *
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-double-array-new">poc_double_array_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">PocDoubleArray</span> *
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-double-array-sized-new">poc_double_array_sized_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">PocDoubleArray</span> *
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-double-array-set-size">poc_double_array_set_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">PocDoubleArray</span> *
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-double-array-ref">poc_double_array_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-double-array-unref">poc_double_array_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-enum-to-string">poc_enum_to_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-enum-from-string">poc_enum_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">double</span> *
+</td>
+<td class="function_name">
+<a href="poc-Poc-Types.html#poc-line-style-get-dashes">poc_line_style_get_dashes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="PocDoubleArray"></a><a name="PocPoint"></a><a name="PocPointArray"></a><div class="refsect1">
+<a name="poc-Poc-Types.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a href="poc-Poc-Types.html#PocAxisMode">PocAxisMode</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a href="poc-Poc-Types.html#PocLineStyle">PocLineStyle</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="poc-Poc-Types.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Boxed-Types.html">GBoxed</a>
+    <span class="lineart">├──</span> PocDoubleArray
+    <span class="lineart">├──</span> PocPoint
+    <span class="lineart">╰──</span> PocPointArray
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">├──</span> PocAxisMode
+    <span class="lineart">╰──</span> PocLineStyle
+</pre>
+</div>
+<div class="refsect1">
+<a name="poc-Poc-Types.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;poc.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="poc-Poc-Types.description"></a><h2>Description</h2>
+<p>Boxed types and enums used by PocPlot.</p>
+</div>
+<div class="refsect1">
+<a name="poc-Poc-Types.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="poc-point-array-index"></a><h3>poc_point_array_index()</h3>
+<pre class="programlisting">#define poc_point_array_index(a,i) ((a)-&gt;data[(i)])
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-point-array-len"></a><h3>poc_point_array_len()</h3>
+<pre class="programlisting">#define poc_point_array_len(a)		((a)-&gt;len)
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-point-array-append-val"></a><h3>poc_point_array_append_val()</h3>
+<pre class="programlisting">#define poc_point_array_append_val(a,v) poc_point_array_append_vals (a, &amp;(v), 1)
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-point-array-new"></a><h3>poc_point_array_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">PocPointArray</span> *
+poc_point_array_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>A wrapper for <a href="../glib/glib-Arrays.html#GArray"><span class="type">GArray</span></a> to create an array of <span class="type">PocPointArray</span> values.</p>
+<div class="refsect3">
+<a name="poc-point-array-new.returns"></a><h4>Returns</h4>
+<p>a <span class="type">PocPointArray</span>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-point-array-sized-new"></a><h3>poc_point_array_sized_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">PocPointArray</span> *
+poc_point_array_sized_new (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> reserved_size</code></em>);</pre>
+<p>A wrapper for <a href="../glib/glib-Arrays.html#GArray"><span class="type">GArray</span></a> to create an array of <span class="type">PocPointArray</span> values with
+<em class="parameter"><code>reserved_size</code></em>
+ elements preallocated.  This avoids frequent reallocation, if
+you are going to add many elements to the array. Note however that the size
+of the array is still zero.</p>
+<div class="refsect3">
+<a name="poc-point-array-sized-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>reserved_size</p></td>
+<td class="parameter_description"><p>number of elements preallocated</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-point-array-sized-new.returns"></a><h4>Returns</h4>
+<p>a <span class="type">PocPointArray</span>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-point-array-set-size"></a><h3>poc_point_array_set_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">PocPointArray</span> *
+poc_point_array_set_size (<em class="parameter"><code><span class="type">PocPointArray</span> *array</code></em>,
+                          <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> size</code></em>);</pre>
+<p>Sets the size of the array, expanding it if necessary
+The new elements are set to 0.</p>
+<div class="refsect3">
+<a name="poc-point-array-set-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>a <span class="type">PocPointArray</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>the new size of the array</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-point-array-set-size.returns"></a><h4>Returns</h4>
+<p>the <span class="type">PocPointArray</span>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-point-array-append-vals"></a><h3>poc_point_array_append_vals ()</h3>
+<pre class="programlisting"><span class="returnvalue">PocPointArray</span> *
+poc_point_array_append_vals (<em class="parameter"><code><span class="type">PocPointArray</span> *dst</code></em>,
+                             <em class="parameter"><code>const <span class="type">PocPoint</span> *src</code></em>,
+                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> len</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-point-array-ref"></a><h3>poc_point_array_ref ()</h3>
+<pre class="programlisting"><span class="returnvalue">PocPointArray</span> *
+poc_point_array_ref (<em class="parameter"><code><span class="type">PocPointArray</span> *array</code></em>);</pre>
+<p>Increments the reference count of <em class="parameter"><code>array</code></em>
+ by one. This function is
+thread-safe and may be called from any thread.</p>
+<div class="refsect3">
+<a name="poc-point-array-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>a <span class="type">PocPointArray</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-point-array-ref.returns"></a><h4>Returns</h4>
+<p> the <span class="type">PocPointArray</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-point-array-unref"></a><h3>poc_point_array_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_point_array_unref (<em class="parameter"><code><span class="type">PocPointArray</span> *array</code></em>);</pre>
+<p>Increments the reference count of <em class="parameter"><code>array</code></em>
+ by one. This function is
+thread-safe and may be called from any thread.</p>
+<div class="refsect3">
+<a name="poc-point-array-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>a <span class="type">PocPointArray</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-double-array-index"></a><h3>poc_double_array_index()</h3>
+<pre class="programlisting">#define poc_double_array_index(a,i) ((a)-&gt;data[(i)])
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-double-array-len"></a><h3>poc_double_array_len()</h3>
+<pre class="programlisting">#define poc_double_array_len(a)		((a)-&gt;len)
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-double-array-append-vals"></a><h3>poc_double_array_append_vals()</h3>
+<pre class="programlisting">#define             poc_double_array_append_vals(a,v,n)</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-double-array-append-val"></a><h3>poc_double_array_append_val()</h3>
+<pre class="programlisting">#define             poc_double_array_append_val(a,v)</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-double-array-new"></a><h3>poc_double_array_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">PocDoubleArray</span> *
+poc_double_array_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>A wrapper for <a href="../glib/glib-Arrays.html#GArray"><span class="type">GArray</span></a> to create an array of <a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> values.</p>
+<div class="refsect3">
+<a name="poc-double-array-new.returns"></a><h4>Returns</h4>
+<p>a <span class="type">PocDoubleArray</span>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-double-array-sized-new"></a><h3>poc_double_array_sized_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">PocDoubleArray</span> *
+poc_double_array_sized_new (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> reserved_size</code></em>);</pre>
+<p>A wrapper for <a href="../glib/glib-Arrays.html#GArray"><span class="type">GArray</span></a> to create an array of <a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> values with
+<em class="parameter"><code>reserved_size</code></em>
+ elements preallocated.  This avoids frequent reallocation, if
+you are going to add many elements to the array. Note however that the size
+of the array is still zero.</p>
+<div class="refsect3">
+<a name="poc-double-array-sized-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>reserved_size</p></td>
+<td class="parameter_description"><p>number of elements preallocated</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-double-array-sized-new.returns"></a><h4>Returns</h4>
+<p>a <span class="type">PocDoubleArray</span>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-double-array-set-size"></a><h3>poc_double_array_set_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">PocDoubleArray</span> *
+poc_double_array_set_size (<em class="parameter"><code><span class="type">PocDoubleArray</span> *array</code></em>,
+                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> size</code></em>);</pre>
+<p>Sets the size of the array, expanding it if necessary
+The new elements are set to 0.</p>
+<div class="refsect3">
+<a name="poc-double-array-set-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>a <span class="type">PocDoubleArray</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>the new size of the array</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-double-array-set-size.returns"></a><h4>Returns</h4>
+<p>the <span class="type">PocDoubleArray</span>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-double-array-ref"></a><h3>poc_double_array_ref ()</h3>
+<pre class="programlisting"><span class="returnvalue">PocDoubleArray</span> *
+poc_double_array_ref (<em class="parameter"><code><span class="type">PocDoubleArray</span> *array</code></em>);</pre>
+<p>Increments the reference count of <em class="parameter"><code>array</code></em>
+ by one. This function is
+thread-safe and may be called from any thread.</p>
+<div class="refsect3">
+<a name="poc-double-array-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>a <span class="type">PocDoubleArray</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-double-array-ref.returns"></a><h4>Returns</h4>
+<p> the <span class="type">PocDoubleArray</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-double-array-unref"></a><h3>poc_double_array_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_double_array_unref (<em class="parameter"><code><span class="type">PocDoubleArray</span> *array</code></em>);</pre>
+<p>Increments the reference count of <em class="parameter"><code>array</code></em>
+ by one. This function is
+thread-safe and may be called from any thread.</p>
+<div class="refsect3">
+<a name="poc-double-array-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>a <span class="type">PocDoubleArray</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-enum-to-string"></a><h3>poc_enum_to_string ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+poc_enum_to_string (<em class="parameter"><code><a href="../gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> enum_type</code></em>,
+                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> value</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-enum-from-string"></a><h3>poc_enum_from_string ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+poc_enum_from_string (<em class="parameter"><code><a href="../gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> enum_type</code></em>,
+                      <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *string</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-line-style-get-dashes"></a><h3>poc_line_style_get_dashes ()</h3>
+<pre class="programlisting">const <span class="returnvalue">double</span> *
+poc_line_style_get_dashes (<em class="parameter"><code><a href="poc-Poc-Types.html#PocLineStyle"><span class="type">PocLineStyle</span></a> line_style</code></em>,
+                           <em class="parameter"><code><span class="type">int</span> *num_dashes</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="poc-Poc-Types.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="PocAxisMode"></a><h3>enum PocAxisMode</h3>
+<p>An enumerated type specifying the axis mode.</p>
+<div class="refsect3">
+<a name="PocAxisMode.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="POC-AXIS-LINEAR:CAPS"></a>POC_AXIS_LINEAR</p></td>
+<td class="enum_member_description">
+<p>Show a linear axis</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="POC-AXIS-LOG-OCTAVE:CAPS"></a>POC_AXIS_LOG_OCTAVE</p></td>
+<td class="enum_member_description">
+<p>Show a logarithmic axis in octaves</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="POC-AXIS-LOG-DECADE:CAPS"></a>POC_AXIS_LOG_DECADE</p></td>
+<td class="enum_member_description">
+<p>Show a logarithmic axis in decades</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocLineStyle"></a><h3>enum PocLineStyle</h3>
+<p>An enumerated type specifying the plot line style. These should be self
+explanatory.</p>
+<div class="refsect3">
+<a name="PocLineStyle.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="POC-LINE-STYLE-SOLID:CAPS"></a>POC_LINE_STYLE_SOLID</p></td>
+<td class="enum_member_description">
+<p>solid line</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="POC-LINE-STYLE-DOTS:CAPS"></a>POC_LINE_STYLE_DOTS</p></td>
+<td class="enum_member_description">
+<p>dotted line</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="POC-LINE-STYLE-DASH:CAPS"></a>POC_LINE_STYLE_DASH</p></td>
+<td class="enum_member_description">
+<p>dashed line</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="POC-LINE-STYLE-LONG-DASH:CAPS"></a>POC_LINE_STYLE_LONG_DASH</p></td>
+<td class="enum_member_description">
+<p>long dashes</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="POC-LINE-STYLE-DOT-DASH:CAPS"></a>POC_LINE_STYLE_DOT_DASH</p></td>
+<td class="enum_member_description">
+<p>dot-dash line</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="POC-LINE-STYLE-LONG-SHORT-DASH:CAPS"></a>POC_LINE_STYLE_LONG_SHORT_DASH</p></td>
+<td class="enum_member_description">
+<p>long-short dashes</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="POC-LINE-STYLE-DOT-DOT-DASH:CAPS"></a>POC_LINE_STYLE_DOT_DOT_DASH</p></td>
+<td class="enum_member_description">
+<p>dot-dot-dash line</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>

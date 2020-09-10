@@ -1,0 +1,1335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PocPlot: PocPlot Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="PocPlot Reference Manual">
+<link rel="up" href="Plot.html" title="PocPlot Plot Objects">
+<link rel="prev" href="Plot.html" title="PocPlot Plot Objects">
+<link rel="next" href="PocDataset.html" title="PocDataset">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#PocPlot.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#PocPlot.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#PocPlot.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#PocPlot.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="Plot.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="Plot.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="PocDataset.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="PocPlot"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="PocPlot.top_of_page"></a>PocPlot</span></h2>
+<p>PocPlot — <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> canvas widget</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="PocPlot.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="PocPlot.html#PocPlot-struct"><span class="returnvalue">PocPlot</span></a> *
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-new">poc_plot_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-set-enable-plot-fill">poc_plot_set_enable_plot_fill</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-get-enable-plot-fill">poc_plot_get_enable_plot_fill</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-get-plot-fill">poc_plot_get_plot_fill</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-set-plot-fill">poc_plot_set_plot_fill</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gfloat"><span class="returnvalue">gfloat</span></a>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-get-border">poc_plot_get_border</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-set-border">poc_plot_set_border</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-set-title">poc_plot_set_title</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-get-title">poc_plot_get_title</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-set-x-axis">poc_plot_set_x_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-get-x-axis">poc_plot_get_x_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-set-y-axis">poc_plot_set_y_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-get-y-axis">poc_plot_get_y_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-set-axis">poc_plot_set_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-add-dataset">poc_plot_add_dataset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-remove-dataset">poc_plot_remove_dataset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-clear-dataset">poc_plot_clear_dataset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="PocDataset.html#PocDataset-struct"><span class="returnvalue">PocDataset</span></a> *
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-find-dataset">poc_plot_find_dataset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-solo-dataset">poc_plot_solo_dataset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-axis-at-point">poc_plot_axis_at_point</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-add-axis">poc_plot_add_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-remove-axis">poc_plot_remove_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-clear-axes">poc_plot_clear_axes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-notify-update">poc_plot_notify_update</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a href="PocPlot.html#PocPlotDatasetForEachFunc">*PocPlotDatasetForEachFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="PocDataset.html#PocDataset-struct"><span class="returnvalue">PocDataset</span></a> *
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-dataset-foreach">poc_plot_dataset_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a href="PocPlot.html#PocPlotAxisForEachFunc">*PocPlotAxisForEachFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+</td>
+<td class="function_name">
+<a href="PocPlot.html#poc-plot-axis-foreach">poc_plot_axis_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocPlot.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_name"><a href="PocPlot.html#PocPlot--border">border</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a href="PocPlot.html#PocPlot--enable-plot-fill">enable-plot-fill</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</td>
+<td class="property_name"><a href="PocPlot.html#PocPlot--plot-fill">plot-fill</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a href="PocPlot.html#PocPlot--title">title</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *</td>
+<td class="property_name"><a href="PocPlot.html#PocPlot--x-axis">x-axis</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *</td>
+<td class="property_name"><a href="PocPlot.html#PocPlot--y-axis">y-axis</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocPlot.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a href="PocPlot.html#POC-TYPE-PLOT:CAPS">POC_TYPE_PLOT</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a href="PocPlot.html#PocPlot-struct">PocPlot</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocPlot.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="../gtk3/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="../gtk3/GtkDrawingArea.html#GtkDrawingArea-struct">GtkDrawingArea</a>
+                <span class="lineart">╰──</span> PocPlot
+</pre>
+</div>
+<div class="refsect1">
+<a name="PocPlot.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+PocPlot implements
+ AtkImplementorIface and  <a href="../gtk3/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="PocPlot.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;poc.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="PocPlot.description"></a><h2>Description</h2>
+<p><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> is a 2D graph plotting canvas. To create a plot, add <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> and
+<a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> gadgets to this widget, see <a href="PocPlot.html#poc-plot-add-dataset"><code class="function">poc_plot_add_dataset()</code></a> and
+<a href="PocPlot.html#poc-plot-add-axis"><code class="function">poc_plot_add_axis()</code></a>.</p>
+<div class="refsect2">
+<a name="id-1.3.2.2.9.3"></a><h3>PocPlot as GtkBuildable</h3>
+<p>The PocPlot implementation supports a custom <code class="literal">&lt;plot&gt;</code> element which supports
+any number of <code class="literal">&lt;dataset&gt;</code> and <code class="literal">&lt;axis&gt;</code> elements.</p>
+<p>An example of a UI definition fragment for a PocPlot.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="o">&lt;</span><span class="n">object</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;PocPlot&quot;</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">plot</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">dataset</span> <span class="n">source</span><span class="o">=</span><span class="s">&quot;blue&quot;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">axis</span> <span class="n">source</span><span class="o">=</span><span class="s">&quot;red&quot;</span> <span class="n">orientation</span><span class="o">=</span><span class="s">&quot;vertical&quot;</span> <span class="n">hidden</span><span class="o">=</span><span class="s">&quot;false&quot;</span><span class="o">/&gt;</span>
+  <span class="o">&lt;/</span><span class="n">plot</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">object</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">object</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;PocDataset&quot;</span> <span class="n">id</span><span class="o">=</span><span class="s">&quot;blue&quot;</span><span class="o">&gt;</span>
+  <span class="p">...</span>
+<span class="o">&lt;/</span><span class="n">object</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">object</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;PocAxis&quot;</span> <span class="n">id</span><span class="o">=</span><span class="s">&quot;red&quot;</span><span class="o">&gt;</span>
+  <span class="p">...</span>
+<span class="o">&lt;/</span><span class="n">object</span><span class="o">&gt;</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>The <code class="literal">&lt;dataset&gt;</code> element supports the following attributes:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>source: Xml id of a PocDataset element.</p></li>
+<li class="listitem"><p>x-pack: an optional <a href="../gtk3/gtk3-Standard-Enumerations.html#GtkPackType"><span class="type">GtkPackType</span></a>, how to pack the dataset's X axis.</p></li>
+<li class="listitem"><p>y-pack: an optional <a href="../gtk3/gtk3-Standard-Enumerations.html#GtkPackType"><span class="type">GtkPackType</span></a>, how to pack the dataset's Y axis.</p></li>
+</ul></div>
+<p>The <code class="literal">&lt;axis&gt;</code> elements support the following attribute:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>source: Xml id of a PocAxis element.</p></li>
+<li class="listitem"><p>pack: an optional <a href="../gtk3/gtk3-Standard-Enumerations.html#GtkPackType"><span class="type">GtkPackType</span></a>, how to pack the axis.</p></li>
+<li class="listitem"><p>orientation: a <a href="../gtk3/gtk3-Standard-Enumerations.html#GtkOrientation"><span class="type">GtkOrientation</span></a>, set the Axis orientation</p></li>
+<li class="listitem"><p>hidden: an optional <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>, whether the axis should be displayed or hidden.</p></li>
+</ul></div>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocPlot.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="poc-plot-new"></a><h3>poc_plot_new ()</h3>
+<pre class="programlisting"><a href="PocPlot.html#PocPlot-struct"><span class="returnvalue">PocPlot</span></a> *
+poc_plot_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Create a new <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p>
+<div class="refsect3">
+<a name="poc-plot-new.returns"></a><h4>Returns</h4>
+<p>New <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-set-enable-plot-fill"></a><h3>poc_plot_set_enable_plot_fill ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_set_enable_plot_fill (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value</code></em>);</pre>
+<p>Set whether to fill the plot area plot.</p>
+<div class="refsect3">
+<a name="poc-plot-set-enable-plot-fill.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p><a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to enable plot fill.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-get-enable-plot-fill"></a><h3>poc_plot_get_enable_plot_fill ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+poc_plot_get_enable_plot_fill (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>);</pre>
+<p>Get whether to fill the plot area plot.</p>
+<div class="refsect3">
+<a name="poc-plot-get-enable-plot-fill.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-plot-get-enable-plot-fill.returns"></a><h4>Returns</h4>
+<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if plot fill is enabled.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-get-plot-fill"></a><h3>poc_plot_get_plot_fill ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_get_plot_fill (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                        <em class="parameter"><code><a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *rgba</code></em>);</pre>
+<p>Set the plot area background colour.</p>
+<div class="refsect3">
+<a name="poc-plot-get-plot-fill.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> with the plot background colour.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-set-plot-fill"></a><h3>poc_plot_set_plot_fill ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_set_plot_fill (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                        <em class="parameter"><code>const <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *rgba</code></em>);</pre>
+<p>Get the plot area plot colour.</p>
+<div class="refsect3">
+<a name="poc-plot-set-plot-fill.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> to receive the plot background colour.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-get-border"></a><h3>poc_plot_get_border ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="returnvalue">gfloat</span></a>
+poc_plot_get_border (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>);</pre>
+<p>Get the internal border width.</p>
+<div class="refsect3">
+<a name="poc-plot-get-border.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-plot-get-border.returns"></a><h4>Returns</h4>
+<p> border width</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-set-border"></a><h3>poc_plot_set_border ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_set_border (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> size</code></em>);</pre>
+<p>Set the internal border width.</p>
+<div class="refsect3">
+<a name="poc-plot-set-border.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>border width</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-set-title"></a><h3>poc_plot_set_title ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_set_title (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                    <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>);</pre>
+<p>Set the plot title. The title is not used directly by the <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> widget,
+however it may be used by other gadgets added to the plot.</p>
+<div class="refsect3">
+<a name="poc-plot-set-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>title</p></td>
+<td class="parameter_description"><p>Title for the plot.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-get-title"></a><h3>poc_plot_get_title ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+poc_plot_get_title (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>);</pre>
+<p>Set the plot title.</p>
+<div class="refsect3">
+<a name="poc-plot-get-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-plot-get-title.returns"></a><h4>Returns</h4>
+<p>Plot title. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-set-x-axis"></a><h3>poc_plot_set_x_axis ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_set_x_axis (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                     <em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *x_axis</code></em>);</pre>
+<p>Set the current X axis.  This is used to draw the X axis grid lines in the
+plot area.</p>
+<div class="refsect3">
+<a name="poc-plot-set-x-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_axis</p></td>
+<td class="parameter_description"><p><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> to set the current plot grid</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-get-x-axis"></a><h3>poc_plot_get_x_axis ()</h3>
+<pre class="programlisting"><a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+poc_plot_get_x_axis (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>);</pre>
+<p>Get the current X axis.</p>
+<div class="refsect3">
+<a name="poc-plot-get-x-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-plot-get-x-axis.returns"></a><h4>Returns</h4>
+<p>current X-Axis. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-set-y-axis"></a><h3>poc_plot_set_y_axis ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_set_y_axis (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                     <em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *y_axis</code></em>);</pre>
+<p>Set the current Y axis.  This is used to draw the Y axis grid lines in the
+plot area.</p>
+<div class="refsect3">
+<a name="poc-plot-set-y-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_axis</p></td>
+<td class="parameter_description"><p><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> to set the current plot grid</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-get-y-axis"></a><h3>poc_plot_get_y_axis ()</h3>
+<pre class="programlisting"><a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+poc_plot_get_y_axis (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>);</pre>
+<p>Get the current Y axis.</p>
+<div class="refsect3">
+<a name="poc-plot-get-y-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-plot-get-y-axis.returns"></a><h4>Returns</h4>
+<p>current Y-Axis. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-set-axis"></a><h3>poc_plot_set_axis ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_set_axis (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                   <em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *axis</code></em>);</pre>
+<p>Set the current axis. The <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> determines whether <em class="parameter"><code>axis</code></em>
+ refers to an
+X or Y axis.</p>
+<div class="refsect3">
+<a name="poc-plot-set-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> to set the current plot grid</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-add-dataset"></a><h3>poc_plot_add_dataset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_add_dataset (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                      <em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *dataset</code></em>,
+                      <em class="parameter"><code><a href="../gtk3/gtk3-Standard-Enumerations.html#GtkPackType"><span class="type">GtkPackType</span></a> x_pack</code></em>,
+                      <em class="parameter"><code><a href="../gtk3/gtk3-Standard-Enumerations.html#GtkPackType"><span class="type">GtkPackType</span></a> y_pack</code></em>);</pre>
+<p>Add a <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> gadget to the plot. <em class="parameter"><code>x_pack</code></em>
+ and <em class="parameter"><code>y_pack</code></em>
+ determine which
+edge of the plot should show the axes.</p>
+<div class="refsect3">
+<a name="poc-plot-add-dataset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dataset</p></td>
+<td class="parameter_description"><p><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> to add.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_pack</p></td>
+<td class="parameter_description"><p>How to pack the X axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_pack</p></td>
+<td class="parameter_description"><p>How to pack the Y axis (start = bottom, end = top).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-remove-dataset"></a><h3>poc_plot_remove_dataset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_remove_dataset (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                         <em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *dataset</code></em>);</pre>
+<p>Remove a <em class="parameter"><code>dataset</code></em>
+ from the plot. The <em class="parameter"><code>dataset</code></em>
+ must already belong to the
+plot.  Axes that are no longer referenced by another <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> are also
+removed.</p>
+<div class="refsect3">
+<a name="poc-plot-remove-dataset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dataset</p></td>
+<td class="parameter_description"><p><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> to remove</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-clear-dataset"></a><h3>poc_plot_clear_dataset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_clear_dataset (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>);</pre>
+<p>Remove all datasets from the plot.</p>
+<div class="refsect3">
+<a name="poc-plot-clear-dataset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-find-dataset"></a><h3>poc_plot_find_dataset ()</h3>
+<pre class="programlisting"><a href="PocDataset.html#PocDataset-struct"><span class="returnvalue">PocDataset</span></a> *
+poc_plot_find_dataset (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                       <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nickname</code></em>);</pre>
+<p>Find a dataset belonging to the plot with the requested nickname.</p>
+<div class="refsect3">
+<a name="poc-plot-find-dataset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nickname</p></td>
+<td class="parameter_description"><p>Nickname for a <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-plot-find-dataset.returns"></a><h4>Returns</h4>
+<p>a <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-solo-dataset"></a><h3>poc_plot_solo_dataset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_solo_dataset (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                       <em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *dataset</code></em>,
+                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> solo</code></em>);</pre>
+<p>Show only the grid lines and plot data for the specified <em class="parameter"><code>dataset</code></em>
+.  If
+multiple datasets have solo enabled only they are displayed, if no datasets
+are solo then all datasets are displayed.</p>
+<div class="refsect3">
+<a name="poc-plot-solo-dataset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dataset</p></td>
+<td class="parameter_description"><p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> belonging to the plot.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>solo</p></td>
+<td class="parameter_description"><p><a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to show only this <em class="parameter"><code>dataset</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-axis-at-point"></a><h3>poc_plot_axis_at_point ()</h3>
+<pre class="programlisting"><a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+poc_plot_axis_at_point (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y</code></em>);</pre>
+<p>Find the <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> under the specifiec <em class="parameter"><code>x</code></em>
+, <em class="parameter"><code>y</code></em>
+ coordinate.</p>
+<div class="refsect3">
+<a name="poc-plot-axis-at-point.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>x-coordinate in pixels</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>y-coordinate in pixels</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-plot-axis-at-point.returns"></a><h4>Returns</h4>
+<p>the <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-add-axis"></a><h3>poc_plot_add_axis ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_add_axis (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                   <em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *axis</code></em>,
+                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> hidden</code></em>,
+                   <em class="parameter"><code><a href="../gtk3/gtk3-Standard-Enumerations.html#GtkPackType"><span class="type">GtkPackType</span></a> pack</code></em>,
+                   <em class="parameter"><code><a href="../gtk3/gtk3-Standard-Enumerations.html#GtkOrientation"><span class="type">GtkOrientation</span></a> orientation</code></em>);</pre>
+<p>Add an axis to the plot. <em class="parameter"><code>pack</code></em>
+ and <em class="parameter"><code>orientation</code></em>
+ specify how the axis should
+be displayed. Normally this is not required as axes belonging to datasets
+are added automatically.</p>
+<div class="refsect3">
+<a name="poc-plot-add-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> to add.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hidden</p></td>
+<td class="parameter_description"><p>Do not draw <em class="parameter"><code>axis</code></em>
+if <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pack</p></td>
+<td class="parameter_description"><p>How to pack the axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Orientation for the axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-remove-axis"></a><h3>poc_plot_remove_axis ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_remove_axis (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                      <em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *axis</code></em>);</pre>
+<p>Remove the <em class="parameter"><code>axis</code></em>
+ from the plot.</p>
+<div class="refsect3">
+<a name="poc-plot-remove-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> to remove.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-clear-axes"></a><h3>poc_plot_clear_axes ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_clear_axes (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>);</pre>
+<p>Remove all axes from the plot.</p>
+<div class="refsect3">
+<a name="poc-plot-clear-axes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-notify-update"></a><h3>poc_plot_notify_update ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_plot_notify_update (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>);</pre>
+<p>Notify PocPlot of updates in a dataset or axis.</p>
+<div class="refsect3">
+<a name="poc-plot-notify-update.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocPlotDatasetForEachFunc"></a><h3>PocPlotDatasetForEachFunc ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*PocPlotDatasetForEachFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                              <em class="parameter"><code><a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> *dataset</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-dataset-foreach"></a><h3>poc_plot_dataset_foreach ()</h3>
+<pre class="programlisting"><a href="PocDataset.html#PocDataset-struct"><span class="returnvalue">PocDataset</span></a> *
+poc_plot_dataset_foreach (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                          <em class="parameter"><code><a href="PocPlot.html#PocPlotDatasetForEachFunc"><span class="type">PocPlotDatasetForEachFunc</span></a> predicate</code></em>,
+                          <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Call <em class="parameter"><code>predicate</code></em>
+ for each dataset in the plot.  If <em class="parameter"><code>predicate</code></em>
+ returns
+<a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> return the dataset. If iteration completes <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.</p>
+<div class="refsect3">
+<a name="poc-plot-dataset-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>predicate</p></td>
+<td class="parameter_description"><p>iterator predicate function. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The callback is valid only during the call to the method."><span class="acronym">scope call</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data passed to <em class="parameter"><code>predicate</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-plot-dataset-foreach.returns"></a><h4>Returns</h4>
+<p>the <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocPlotAxisForEachFunc"></a><h3>PocPlotAxisForEachFunc ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*PocPlotAxisForEachFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                           <em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *axis</code></em>,
+                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-plot-axis-foreach"></a><h3>poc_plot_axis_foreach ()</h3>
+<pre class="programlisting"><a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+poc_plot_axis_foreach (<em class="parameter"><code><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> *self</code></em>,
+                       <em class="parameter"><code><a href="PocPlot.html#PocPlotAxisForEachFunc"><span class="type">PocPlotAxisForEachFunc</span></a> predicate</code></em>,
+                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Call <em class="parameter"><code>predicate</code></em>
+ for each axis in the plot.  If <em class="parameter"><code>predicate</code></em>
+ returns
+<a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> return the axis. If iteration completes <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.</p>
+<div class="refsect3">
+<a name="poc-plot-axis-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>predicate</p></td>
+<td class="parameter_description"><p>iterator predicate function. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The callback is valid only during the call to the method."><span class="acronym">scope call</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data passed to <em class="parameter"><code>predicate</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-plot-axis-foreach.returns"></a><h4>Returns</h4>
+<p>the <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocPlot.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="POC-TYPE-PLOT:CAPS"></a><h3>POC_TYPE_PLOT</h3>
+<pre class="programlisting">#define POC_TYPE_PLOT			poc_plot_get_type ()
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocPlot-struct"></a><h3>PocPlot</h3>
+<pre class="programlisting">typedef struct _PocPlot PocPlot;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocPlot.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="PocPlot--border"></a><h3>The <code class="literal">“border”</code> property</h3>
+<pre class="programlisting">  “border”                   <a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<p>Internal border width between plot items.</p>
+<p>Owner: PocPlot</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: [0,100]</p>
+<p>Default value: 6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocPlot--enable-plot-fill"></a><h3>The <code class="literal">“enable-plot-fill”</code> property</h3>
+<pre class="programlisting">  “enable-plot-fill”         <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Enable plot fill colour.</p>
+<p>Owner: PocPlot</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocPlot--plot-fill"></a><h3>The <code class="literal">“plot-fill”</code> property</h3>
+<pre class="programlisting">  “plot-fill”                <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</pre>
+<p>Plot fill colour for graph area.</p>
+<p>Owner: PocPlot</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocPlot--title"></a><h3>The <code class="literal">“title”</code> property</h3>
+<pre class="programlisting">  “title”                    <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Plot title.</p>
+<p>Owner: PocPlot</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocPlot--x-axis"></a><h3>The <code class="literal">“x-axis”</code> property</h3>
+<pre class="programlisting">  “x-axis”                   <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *</pre>
+<p>Current X axis - draw X coordinate grid for this axis.</p>
+<p>Owner: PocPlot</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocPlot--y-axis"></a><h3>The <code class="literal">“y-axis”</code> property</h3>
+<pre class="programlisting">  “y-axis”                   <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *</pre>
+<p>Current X axis - draw Y coordinate grid for this axis.</p>
+<p>Owner: PocPlot</p>
+<p>Flags: Read / Write</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocPlot.see-also"></a><h2>See Also</h2>
+<p><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> <a href="PocLegend.html#PocLegend-struct"><span class="type">PocLegend</span></a> <a href="PocSample.html#PocSample-struct"><span class="type">PocSample</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>

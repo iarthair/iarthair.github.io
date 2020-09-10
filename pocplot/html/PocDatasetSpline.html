@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PocDatasetSpline: PocPlot Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="PocPlot Reference Manual">
+<link rel="up" href="Plot.html" title="PocPlot Plot Objects">
+<link rel="prev" href="PocDataset.html" title="PocDataset">
+<link rel="next" href="PocAxis.html" title="PocAxis">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#PocDatasetSpline.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#PocDatasetSpline.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#PocDatasetSpline.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="Plot.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="PocDataset.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="PocAxis.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="PocDatasetSpline"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="PocDatasetSpline.top_of_page"></a>PocDatasetSpline</span></h2>
+<p>PocDatasetSpline — Dataset for <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="PocDatasetSpline.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="returnvalue">PocDatasetSpline</span></a> *
+</td>
+<td class="function_name">
+<a href="PocDatasetSpline.html#poc-dataset-spline-new">poc_dataset_spline_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDatasetSpline.html#poc-dataset-spline-get-marker-stroke">poc_dataset_spline_get_marker_stroke</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDatasetSpline.html#poc-dataset-spline-set-marker-stroke">poc_dataset_spline_set_marker_stroke</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDatasetSpline.html#poc-dataset-spline-get-marker-fill">poc_dataset_spline_get_marker_fill</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDatasetSpline.html#poc-dataset-spline-set-marker-fill">poc_dataset_spline_set_marker_fill</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="PocDatasetSpline.html#poc-dataset-spline-get-show-markers">poc_dataset_spline_get_show_markers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocDatasetSpline.html#poc-dataset-spline-set-show-markers">poc_dataset_spline_set_show_markers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocDatasetSpline.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</td>
+<td class="property_name"><a href="PocDatasetSpline.html#PocDatasetSpline--marker-fill">marker-fill</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</td>
+<td class="property_name"><a href="PocDatasetSpline.html#PocDatasetSpline--marker-stroke">marker-stroke</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a href="PocDatasetSpline.html#PocDatasetSpline--show-markers">show-markers</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocDatasetSpline.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a href="PocDatasetSpline.html#POC-TYPE-DATASET-SPLINE:CAPS">POC_TYPE_DATASET_SPLINE</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a href="PocDatasetSpline.html#PocDatasetSpline-struct">PocDatasetSpline</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocDatasetSpline.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="PocDataset.html#PocDataset-struct">PocDataset</a>
+        <span class="lineart">╰──</span> PocDatasetSpline
+</pre>
+</div>
+<div class="refsect1">
+<a name="PocDatasetSpline.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;poc.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="PocDatasetSpline.description"></a><h2>Description</h2>
+<p>A <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a> subclass which interpolates a curve from the control points
+based on the algorithm from Numerical Recipies 2nd Edition.
+Control points may be highlighted by drawing markers at their locations.</p>
+</div>
+<div class="refsect1">
+<a name="PocDatasetSpline.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="poc-dataset-spline-new"></a><h3>poc_dataset_spline_new ()</h3>
+<pre class="programlisting"><a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="returnvalue">PocDatasetSpline</span></a> *
+poc_dataset_spline_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Create a new <a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a></p>
+<div class="refsect3">
+<a name="poc-dataset-spline-new.returns"></a><h4>Returns</h4>
+<p>New <a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-spline-get-marker-stroke"></a><h3>poc_dataset_spline_get_marker_stroke ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_spline_get_marker_stroke (<em class="parameter"><code><a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a> *self</code></em>,
+                                      <em class="parameter"><code><a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *rgba</code></em>);</pre>
+<p>Get the colour for stroking markers.</p>
+<div class="refsect3">
+<a name="poc-dataset-spline-get-marker-stroke.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> to receive the marker stroke colour</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-spline-set-marker-stroke"></a><h3>poc_dataset_spline_set_marker_stroke ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_spline_set_marker_stroke (<em class="parameter"><code><a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a> *self</code></em>,
+                                      <em class="parameter"><code>const <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *rgba</code></em>);</pre>
+<p>Set the colour for stroking markers.</p>
+<div class="refsect3">
+<a name="poc-dataset-spline-set-marker-stroke.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-spline-get-marker-fill"></a><h3>poc_dataset_spline_get_marker_fill ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_spline_get_marker_fill (<em class="parameter"><code><a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a> *self</code></em>,
+                                    <em class="parameter"><code><a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *rgba</code></em>);</pre>
+<p>Set the colour for stroking markers.</p>
+<div class="refsect3">
+<a name="poc-dataset-spline-get-marker-fill.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-spline-set-marker-fill"></a><h3>poc_dataset_spline_set_marker_fill ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_spline_set_marker_fill (<em class="parameter"><code><a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a> *self</code></em>,
+                                    <em class="parameter"><code>const <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *rgba</code></em>);</pre>
+<p>Get the colour for stroking markers.</p>
+<div class="refsect3">
+<a name="poc-dataset-spline-set-marker-fill.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> to receive the marker stroke colour</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-spline-get-show-markers"></a><h3>poc_dataset_spline_get_show_markers ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+poc_dataset_spline_get_show_markers (<em class="parameter"><code><a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a> *self</code></em>);</pre>
+<p>Get whether to show markers on control points.</p>
+<div class="refsect3">
+<a name="poc-dataset-spline-get-show-markers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-dataset-spline-get-show-markers.returns"></a><h4>Returns</h4>
+<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if markers are shown.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-dataset-spline-set-show-markers"></a><h3>poc_dataset_spline_set_show_markers ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_dataset_spline_set_show_markers (<em class="parameter"><code><a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a> *self</code></em>,
+                                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value</code></em>);</pre>
+<p>Set whether to show markers on control points.</p>
+<div class="refsect3">
+<a name="poc-dataset-spline-set-show-markers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocDatasetSpline.html#PocDatasetSpline-struct"><span class="type">PocDatasetSpline</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Show markers if <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocDatasetSpline.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="POC-TYPE-DATASET-SPLINE:CAPS"></a><h3>POC_TYPE_DATASET_SPLINE</h3>
+<pre class="programlisting">#define POC_TYPE_DATASET_SPLINE			poc_dataset_spline_get_type ()
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocDatasetSpline-struct"></a><h3>PocDatasetSpline</h3>
+<pre class="programlisting">typedef struct _PocDatasetSpline PocDatasetSpline;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocDatasetSpline.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="PocDatasetSpline--marker-fill"></a><h3>The <code class="literal">“marker-fill”</code> property</h3>
+<pre class="programlisting">  “marker-fill”              <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</pre>
+<p>Colour for filling markers.</p>
+<p>Owner: PocDatasetSpline</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocDatasetSpline--marker-stroke"></a><h3>The <code class="literal">“marker-stroke”</code> property</h3>
+<pre class="programlisting">  “marker-stroke”            <a href="../gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> *</pre>
+<p>Colour for stroking markers.</p>
+<p>Owner: PocDatasetSpline</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocDatasetSpline--show-markers"></a><h3>The <code class="literal">“show-markers”</code> property</h3>
+<pre class="programlisting">  “show-markers”             <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Show markers on graph lines.</p>
+<p>Owner: PocDatasetSpline</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocDatasetSpline.see-also"></a><h2>See Also</h2>
+<p><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>

@@ -1,0 +1,1726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PocAxis: PocPlot Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="PocPlot Reference Manual">
+<link rel="up" href="Plot.html" title="PocPlot Plot Objects">
+<link rel="prev" href="PocDatasetSpline.html" title="PocDatasetSpline">
+<link rel="next" href="Legend.html" title="PocPlot Additional Objects">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#PocAxis.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#PocAxis.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#PocAxis.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#PocAxis.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="Plot.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="PocDatasetSpline.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="Legend.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="PocAxis"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="PocAxis.top_of_page"></a>PocAxis</span></h2>
+<p>PocAxis — Axis gadget for <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a></p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="PocAxis.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-new">poc_axis_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-set-axis-mode">poc_axis_set_axis_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="poc-Poc-Types.html#PocAxisMode"><span class="returnvalue">PocAxisMode</span></a>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-axis-mode">poc_axis_get_axis_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-set-lower-bound">poc_axis_set_lower_bound</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-lower-bound">poc_axis_get_lower_bound</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-set-upper-bound">poc_axis_set_upper_bound</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-upper-bound">poc_axis_get_upper_bound</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-set-adjustment">poc_axis_set_adjustment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../gtk3/GtkAdjustment.html#GtkAdjustment-struct"><span class="returnvalue">GtkAdjustment</span></a> *
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-adjustment">poc_axis_get_adjustment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-set-major-interval">poc_axis_set_major_interval</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-major-interval">poc_axis_get_major_interval</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-set-auto-interval">poc_axis_set_auto_interval</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-auto-interval">poc_axis_get_auto_interval</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-set-minor-divisions">poc_axis_set_minor_divisions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-minor-divisions">poc_axis_get_minor_divisions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-set-tick-size">poc_axis_set_tick_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gfloat"><span class="returnvalue">gfloat</span></a>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-tick-size">poc_axis_get_tick_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-set-label-size">poc_axis_set_label_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gfloat"><span class="returnvalue">gfloat</span></a>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-label-size">poc_axis_get_label_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-set-major-grid">poc_axis_set_major_grid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="poc-Poc-Types.html#PocLineStyle"><span class="returnvalue">PocLineStyle</span></a>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-major-grid">poc_axis_get_major_grid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-set-minor-grid">poc_axis_set_minor_grid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="poc-Poc-Types.html#PocLineStyle"><span class="returnvalue">PocLineStyle</span></a>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-minor-grid">poc_axis_get_minor_grid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-set-legend">poc_axis_set_legend</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-legend">poc_axis_get_legend</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-set-legend-size">poc_axis_set_legend_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gfloat"><span class="returnvalue">gfloat</span></a>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-legend-size">poc_axis_get_legend_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-notify-update">poc_axis_notify_update</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-draw-axis">poc_axis_draw_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-draw-grid">poc_axis_draw_grid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-size">poc_axis_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-configure">poc_axis_configure</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-range">poc_axis_get_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-get-display-range">poc_axis_get_display_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">double</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-linear-project">poc_axis_linear_project</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">double</span>
+</td>
+<td class="function_name">
+<a href="PocAxis.html#poc-axis-project">poc_axis_project</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocAxis.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="../gtk3/GtkAdjustment.html#GtkAdjustment-struct"><span class="type">GtkAdjustment</span></a> *</td>
+<td class="property_name"><a href="PocAxis.html#PocAxis--adjustment">adjustment</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a href="PocAxis.html#PocAxis--auto-interval">auto-interval</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="poc-Poc-Types.html#PocAxisMode"><span class="type">PocAxisMode</span></a></td>
+<td class="property_name"><a href="PocAxis.html#PocAxis--axis-mode">axis-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_name"><a href="PocAxis.html#PocAxis--label-size">label-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a href="PocAxis.html#PocAxis--legend">legend</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_name"><a href="PocAxis.html#PocAxis--legend-size">legend-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a href="PocAxis.html#PocAxis--lower-bound">lower-bound</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="poc-Poc-Types.html#PocLineStyle"><span class="type">PocLineStyle</span></a></td>
+<td class="property_name"><a href="PocAxis.html#PocAxis--major-grid">major-grid</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a href="PocAxis.html#PocAxis--major-interval">major-interval</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a href="PocAxis.html#PocAxis--minor-divisions">minor-divisions</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="poc-Poc-Types.html#PocLineStyle"><span class="type">PocLineStyle</span></a></td>
+<td class="property_name"><a href="PocAxis.html#PocAxis--minor-grid">minor-grid</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_name"><a href="PocAxis.html#PocAxis--tick-size">tick-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a href="PocAxis.html#PocAxis--upper-bound">upper-bound</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocAxis.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a href="PocAxis.html#PocAxis-update">update</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-NO-HOOKS:CAPS">No Hooks</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocAxis.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a href="PocAxis.html#POC-TYPE-AXIS:CAPS">POC_TYPE_AXIS</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a href="PocAxis.html#PocAxisClass">PocAxisClass</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a href="PocAxis.html#PocAxis-struct">PocAxis</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PocAxis.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> PocAxis
+</pre>
+</div>
+<div class="refsect1">
+<a name="PocAxis.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;poc.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="PocAxis.description"></a><h2>Description</h2>
+<p>Each dataset added to a plot requires an X and Y axis.  Several datasets may
+share axes.  An axis controls the upper and lower bounds and the displayed
+portion of the plot data.  If an axis is configured using a <a href="../gtk3/GtkAdjustment.html#GtkAdjustment-struct"><span class="type">GtkAdjustment</span></a>
+it may display a portion of its full range under control of the adjustment,
+otherwise it shows the full range between its lower and upper bounds.</p>
+<p>Although axes contain drawing code, drawing always takes place under control
+of the <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> and on its canvas. Axes are vertical or horizontally
+orientated and are drawn at the appropriate edge of the plot depending on
+the associated dataset and plot surface. It is possible for the same axis to
+be shared on more than one plot and may be orientated differently on each.
+Axes are also responsible from drawing grid lines in the main plot area.</p>
+</div>
+<div class="refsect1">
+<a name="PocAxis.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="poc-axis-new"></a><h3>poc_axis_new ()</h3>
+<pre class="programlisting"><a href="PocAxis.html#PocAxis-struct"><span class="returnvalue">PocAxis</span></a> *
+poc_axis_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Create a new <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p>
+<div class="refsect3">
+<a name="poc-axis-new.returns"></a><h4>Returns</h4>
+<p>New <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-set-axis-mode"></a><h3>poc_axis_set_axis_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_set_axis_mode (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                        <em class="parameter"><code><a href="poc-Poc-Types.html#PocAxisMode"><span class="type">PocAxisMode</span></a> axis_mode</code></em>);</pre>
+<p>Show axis as linear, octaves or decades.</p>
+<div class="refsect3">
+<a name="poc-axis-set-axis-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>axis_mode</p></td>
+<td class="parameter_description"><p>A <a href="poc-Poc-Types.html#PocAxisMode"><span class="type">PocAxisMode</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-axis-mode"></a><h3>poc_axis_get_axis_mode ()</h3>
+<pre class="programlisting"><a href="poc-Poc-Types.html#PocAxisMode"><span class="returnvalue">PocAxisMode</span></a>
+poc_axis_get_axis_mode (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Return the current axis mode.</p>
+<div class="refsect3">
+<a name="poc-axis-get-axis-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-get-axis-mode.returns"></a><h4>Returns</h4>
+<p> a <a href="poc-Poc-Types.html#PocAxisMode"><span class="type">PocAxisMode</span></a></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-set-lower-bound"></a><h3>poc_axis_set_lower_bound ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_set_lower_bound (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                          <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> bound</code></em>);</pre>
+<p>Set lower bound of range to plot on this axis.</p>
+<div class="refsect3">
+<a name="poc-axis-set-lower-bound.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bound</p></td>
+<td class="parameter_description"><p>lower bound</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-lower-bound"></a><h3>poc_axis_get_lower_bound ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+poc_axis_get_lower_bound (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Get the lower bound of the axis range.</p>
+<div class="refsect3">
+<a name="poc-axis-get-lower-bound.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-get-lower-bound.returns"></a><h4>Returns</h4>
+<p> lower bound</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-set-upper-bound"></a><h3>poc_axis_set_upper_bound ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_set_upper_bound (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                          <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> bound</code></em>);</pre>
+<p>Set upper bound of range to plot on this axis.</p>
+<div class="refsect3">
+<a name="poc-axis-set-upper-bound.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bound</p></td>
+<td class="parameter_description"><p>upper bound</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-upper-bound"></a><h3>poc_axis_get_upper_bound ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+poc_axis_get_upper_bound (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Get the upper bound of the axis range.</p>
+<div class="refsect3">
+<a name="poc-axis-get-upper-bound.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-get-upper-bound.returns"></a><h4>Returns</h4>
+<p> upper bound</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-set-adjustment"></a><h3>poc_axis_set_adjustment ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_set_adjustment (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                         <em class="parameter"><code><a href="../gtk3/GtkAdjustment.html#GtkAdjustment-struct"><span class="type">GtkAdjustment</span></a> *adjustment</code></em>);</pre>
+<p>Set an adjustment to scroll between bounds on axis.</p>
+<div class="refsect3">
+<a name="poc-axis-set-adjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>adjustment</p></td>
+<td class="parameter_description"><p>A <a href="../gtk3/GtkAdjustment.html#GtkAdjustment-struct"><span class="type">GtkAdjustment</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-adjustment"></a><h3>poc_axis_get_adjustment ()</h3>
+<pre class="programlisting"><a href="../gtk3/GtkAdjustment.html#GtkAdjustment-struct"><span class="returnvalue">GtkAdjustment</span></a> *
+poc_axis_get_adjustment (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Get the axis adjustment.</p>
+<div class="refsect3">
+<a name="poc-axis-get-adjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-get-adjustment.returns"></a><h4>Returns</h4>
+<p>A <a href="../gtk3/GtkAdjustment.html#GtkAdjustment-struct"><span class="type">GtkAdjustment</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-set-major-interval"></a><h3>poc_axis_set_major_interval ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_set_major_interval (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> interval</code></em>);</pre>
+<p>Set the major tick interval.</p>
+<div class="refsect3">
+<a name="poc-axis-set-major-interval.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interval</p></td>
+<td class="parameter_description"><p>tick interval</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-major-interval"></a><h3>poc_axis_get_major_interval ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+poc_axis_get_major_interval (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Get the major tick interval.</p>
+<div class="refsect3">
+<a name="poc-axis-get-major-interval.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-get-major-interval.returns"></a><h4>Returns</h4>
+<p> interval</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-set-auto-interval"></a><h3>poc_axis_set_auto_interval ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_set_auto_interval (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> enabled</code></em>);</pre>
+<p>Automatically set major tick interval if <em class="parameter"><code>enabled</code></em>
+ is <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<div class="refsect3">
+<a name="poc-axis-set-auto-interval.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enabled</p></td>
+<td class="parameter_description"><p>enable auto calculation</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-auto-interval"></a><h3>poc_axis_get_auto_interval ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+poc_axis_get_auto_interval (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Get whether auto calculation of the major interval is enabled.</p>
+<div class="refsect3">
+<a name="poc-axis-get-auto-interval.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-get-auto-interval.returns"></a><h4>Returns</h4>
+<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if enabled</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-set-minor-divisions"></a><h3>poc_axis_set_minor_divisions ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_set_minor_divisions (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> divisions</code></em>);</pre>
+<p>Minor tick interval on this axis.</p>
+<div class="refsect3">
+<a name="poc-axis-set-minor-divisions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>divisions</p></td>
+<td class="parameter_description"><p>tick interval</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-minor-divisions"></a><h3>poc_axis_get_minor_divisions ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+poc_axis_get_minor_divisions (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Get the minor tick interval.</p>
+<div class="refsect3">
+<a name="poc-axis-get-minor-divisions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-get-minor-divisions.returns"></a><h4>Returns</h4>
+<p> interval</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-set-tick-size"></a><h3>poc_axis_set_tick_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_set_tick_size (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> size</code></em>);</pre>
+<p>Set the tick size on this axis.</p>
+<div class="refsect3">
+<a name="poc-axis-set-tick-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>tick size</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-tick-size"></a><h3>poc_axis_get_tick_size ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="returnvalue">gfloat</span></a>
+poc_axis_get_tick_size (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Get the tick size.</p>
+<div class="refsect3">
+<a name="poc-axis-get-tick-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-get-tick-size.returns"></a><h4>Returns</h4>
+<p> tick size</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-set-label-size"></a><h3>poc_axis_set_label_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_set_label_size (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> size</code></em>);</pre>
+<p>Set text size for tick label.</p>
+<div class="refsect3">
+<a name="poc-axis-set-label-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>text size</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-label-size"></a><h3>poc_axis_get_label_size ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="returnvalue">gfloat</span></a>
+poc_axis_get_label_size (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Get text size for the tick label.</p>
+<div class="refsect3">
+<a name="poc-axis-get-label-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-get-label-size.returns"></a><h4>Returns</h4>
+<p> size</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-set-major-grid"></a><h3>poc_axis_set_major_grid ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_set_major_grid (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                         <em class="parameter"><code><a href="poc-Poc-Types.html#PocLineStyle"><span class="type">PocLineStyle</span></a> major_grid</code></em>);</pre>
+<p>Set the line style for major grid lines.</p>
+<div class="refsect3">
+<a name="poc-axis-set-major-grid.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>major_grid</p></td>
+<td class="parameter_description"><p>Requested line style</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-major-grid"></a><h3>poc_axis_get_major_grid ()</h3>
+<pre class="programlisting"><a href="poc-Poc-Types.html#PocLineStyle"><span class="returnvalue">PocLineStyle</span></a>
+poc_axis_get_major_grid (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Get the line style for major grid lines.</p>
+<div class="refsect3">
+<a name="poc-axis-get-major-grid.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-get-major-grid.returns"></a><h4>Returns</h4>
+<p> a <a href="poc-Poc-Types.html#PocLineStyle"><span class="type">PocLineStyle</span></a></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-set-minor-grid"></a><h3>poc_axis_set_minor_grid ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_set_minor_grid (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                         <em class="parameter"><code><a href="poc-Poc-Types.html#PocLineStyle"><span class="type">PocLineStyle</span></a> minor_grid</code></em>);</pre>
+<p>Set the line style for minor grid lines.</p>
+<div class="refsect3">
+<a name="poc-axis-set-minor-grid.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>minor_grid</p></td>
+<td class="parameter_description"><p>Requested line style</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-minor-grid"></a><h3>poc_axis_get_minor_grid ()</h3>
+<pre class="programlisting"><a href="poc-Poc-Types.html#PocLineStyle"><span class="returnvalue">PocLineStyle</span></a>
+poc_axis_get_minor_grid (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Get the line style for minor grid lines.</p>
+<div class="refsect3">
+<a name="poc-axis-get-minor-grid.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-get-minor-grid.returns"></a><h4>Returns</h4>
+<p> a <a href="poc-Poc-Types.html#PocLineStyle"><span class="type">PocLineStyle</span></a></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-set-legend"></a><h3>poc_axis_set_legend ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_set_legend (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                     <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *legend</code></em>);</pre>
+<p>Set the legend text for the axis.</p>
+<div class="refsect3">
+<a name="poc-axis-set-legend.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>legend</p></td>
+<td class="parameter_description"><p>legend text</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-legend"></a><h3>poc_axis_get_legend ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+poc_axis_get_legend (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Get the legend text for the axis.</p>
+<div class="refsect3">
+<a name="poc-axis-get-legend.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-get-legend.returns"></a><h4>Returns</h4>
+<p>legend text. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-set-legend-size"></a><h3>poc_axis_set_legend_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_set_legend_size (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                          <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> size</code></em>);</pre>
+<p>Set text size for the axis legend.</p>
+<div class="refsect3">
+<a name="poc-axis-set-legend-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Size for legend text</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-legend-size"></a><h3>poc_axis_get_legend_size ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="returnvalue">gfloat</span></a>
+poc_axis_get_legend_size (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Get text size for the axis legend.</p>
+<div class="refsect3">
+<a name="poc-axis-get-legend-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-get-legend-size.returns"></a><h4>Returns</h4>
+<p> text size</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-notify-update"></a><h3>poc_axis_notify_update ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_notify_update (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-draw-axis"></a><h3>poc_axis_draw_axis ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_draw_axis (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                    <em class="parameter"><code><span class="type">cairo_t</span> *cr</code></em>,
+                    <em class="parameter"><code><a href="../gtk3/gtk3-Standard-Enumerations.html#GtkOrientation"><span class="type">GtkOrientation</span></a> orientation</code></em>,
+                    <em class="parameter"><code><a href="../gtk3/gtk3-Standard-Enumerations.html#GtkPackType"><span class="type">GtkPackType</span></a> pack</code></em>,
+                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> width</code></em>,
+                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> height</code></em>,
+                    <em class="parameter"><code><a href="../gtk3/GtkStyleContext.html#GtkStyleContext-struct"><span class="type">GtkStyleContext</span></a> *style</code></em>);</pre>
+<p>Draw plot grid lines in main plot area.  Used by <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a>.</p>
+<div class="refsect3">
+<a name="poc-axis-draw-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cr</p></td>
+<td class="parameter_description"><p>A <span class="type">cairo_t</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>A <a href="../gtk3/gtk3-Standard-Enumerations.html#GtkOrientation"><span class="type">GtkOrientation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pack</p></td>
+<td class="parameter_description"><p>A <a href="../gtk3/gtk3-Standard-Enumerations.html#GtkPackType"><span class="type">GtkPackType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Plot area width</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Plot area height</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>A <a href="../gtk3/GtkStyleContext.html#GtkStyleContext-struct"><span class="type">GtkStyleContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-draw-grid"></a><h3>poc_axis_draw_grid ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_draw_grid (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                    <em class="parameter"><code><span class="type">cairo_t</span> *cr</code></em>,
+                    <em class="parameter"><code><a href="../gtk3/gtk3-Standard-Enumerations.html#GtkOrientation"><span class="type">GtkOrientation</span></a> orientation</code></em>,
+                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> width</code></em>,
+                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> height</code></em>,
+                    <em class="parameter"><code><a href="../gtk3/GtkStyleContext.html#GtkStyleContext-struct"><span class="type">GtkStyleContext</span></a> *style</code></em>);</pre>
+<p>Draw plot grid lines in main plot area.  Used by <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a>.</p>
+<div class="refsect3">
+<a name="poc-axis-draw-grid.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cr</p></td>
+<td class="parameter_description"><p>A <span class="type">cairo_t</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>A <a href="../gtk3/gtk3-Standard-Enumerations.html#GtkOrientation"><span class="type">GtkOrientation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Plot area width</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Plot area height</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>A <a href="../gtk3/GtkStyleContext.html#GtkStyleContext-struct"><span class="type">GtkStyleContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-size"></a><h3>poc_axis_size ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+poc_axis_size (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>);</pre>
+<p>Compute the width or height of the axis on the plot canvas.
+Used by <a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a>.</p>
+<div class="refsect3">
+<a name="poc-axis-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-configure"></a><h3>poc_axis_configure ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_configure (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                    <em class="parameter"><code><a href="poc-Poc-Types.html#PocAxisMode"><span class="type">PocAxisMode</span></a> axis_mode</code></em>,
+                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> lower_bound</code></em>,
+                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> upper_bound</code></em>);</pre>
+<p>Set axis parameters in a single call.</p>
+<div class="refsect3">
+<a name="poc-axis-configure.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>axis_mode</p></td>
+<td class="parameter_description"><p>A <a href="poc-Poc-Types.html#PocAxisMode"><span class="type">PocAxisMode</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>lower_bound</p></td>
+<td class="parameter_description"><p>axis lower bound</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>upper_bound</p></td>
+<td class="parameter_description"><p>axis upper bound</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-range"></a><h3>poc_axis_get_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_get_range (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *lower_bound</code></em>,
+                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *upper_bound</code></em>);</pre>
+<p>Get full axis range. The visible part of the axis may be less if scrolling.</p>
+<div class="refsect3">
+<a name="poc-axis-get-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>lower_bound</p></td>
+<td class="parameter_description"><p>axis lower bound</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>upper_bound</p></td>
+<td class="parameter_description"><p>axis upper bound</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-get-display-range"></a><h3>poc_axis_get_display_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+poc_axis_get_display_range (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *lower_bound</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *upper_bound</code></em>);</pre>
+<p>Get displayed axis range. This may be less than the full range if scrolling.</p>
+<div class="refsect3">
+<a name="poc-axis-get-display-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>lower_bound</p></td>
+<td class="parameter_description"><p>axis lower bound</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>upper_bound</p></td>
+<td class="parameter_description"><p>axis upper bound</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-linear-project"></a><h3>poc_axis_linear_project ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>
+poc_axis_linear_project (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> value</code></em>,
+                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> norm</code></em>);</pre>
+<p>Project a value from the dataset to pixel based position.  The value is
+projected using linear interpolation between the axis limits.  This function
+is intended for use in drawing code in subclasses of <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p>
+<div class="refsect3">
+<a name="poc-axis-linear-project.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value to project</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>norm</p></td>
+<td class="parameter_description"><p>normalisation value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-linear-project.returns"></a><h4>Returns</h4>
+<p> projected value</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="poc-axis-project"></a><h3>poc_axis_project ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>
+poc_axis_project (<em class="parameter"><code><a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *self</code></em>,
+                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> value</code></em>,
+                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> norm</code></em>);</pre>
+<p>Project a value from the dataset to pixel based position.  The value is
+interpreted according to the axis mode.  This function is intended for use
+in drawing code in subclasses of <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p>
+<div class="refsect3">
+<a name="poc-axis-project.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value to project</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>norm</p></td>
+<td class="parameter_description"><p>normalisation value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="poc-axis-project.returns"></a><h4>Returns</h4>
+<p> projected value</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocAxis.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="POC-TYPE-AXIS:CAPS"></a><h3>POC_TYPE_AXIS</h3>
+<pre class="programlisting">#define POC_TYPE_AXIS			poc_axis_get_type ()
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxisClass"></a><h3>struct PocAxisClass</h3>
+<pre class="programlisting">struct PocAxisClass {
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxis-struct"></a><h3>PocAxis</h3>
+<pre class="programlisting">typedef struct _PocAxis PocAxis;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocAxis.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="PocAxis--adjustment"></a><h3>The <code class="literal">“adjustment”</code> property</h3>
+<pre class="programlisting">  “adjustment”               <a href="../gtk3/GtkAdjustment.html#GtkAdjustment-struct"><span class="type">GtkAdjustment</span></a> *</pre>
+<p>Adjustment to scroll between bounds on axis.</p>
+<p>Owner: PocAxis</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxis--auto-interval"></a><h3>The <code class="literal">“auto-interval”</code> property</h3>
+<pre class="programlisting">  “auto-interval”            <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Automatically set major tick interval.</p>
+<p>Owner: PocAxis</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxis--axis-mode"></a><h3>The <code class="literal">“axis-mode”</code> property</h3>
+<pre class="programlisting">  “axis-mode”                <a href="poc-Poc-Types.html#PocAxisMode"><span class="type">PocAxisMode</span></a></pre>
+<p>Show axis as linear, octaves or decades.</p>
+<p>Owner: PocAxis</p>
+<p>Flags: Read / Write</p>
+<p>Default value: POC_AXIS_LINEAR</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxis--label-size"></a><h3>The <code class="literal">“label-size”</code> property</h3>
+<pre class="programlisting">  “label-size”               <a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<p>Text size for tick label.</p>
+<p>Owner: PocAxis</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [2,100]</p>
+<p>Default value: 10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxis--legend"></a><h3>The <code class="literal">“legend”</code> property</h3>
+<pre class="programlisting">  “legend”                   <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Text for the axis legend.</p>
+<p>Owner: PocAxis</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxis--legend-size"></a><h3>The <code class="literal">“legend-size”</code> property</h3>
+<pre class="programlisting">  “legend-size”              <a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<p>Text size for axis legend.</p>
+<p>Owner: PocAxis</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [2,100]</p>
+<p>Default value: 14</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxis--lower-bound"></a><h3>The <code class="literal">“lower-bound”</code> property</h3>
+<pre class="programlisting">  “lower-bound”              <a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Lower bound of range to plot on this axis.</p>
+<p>Owner: PocAxis</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [-1e+06,1e+06]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxis--major-grid"></a><h3>The <code class="literal">“major-grid”</code> property</h3>
+<pre class="programlisting">  “major-grid”               <a href="poc-Poc-Types.html#PocLineStyle"><span class="type">PocLineStyle</span></a></pre>
+<p>Line style for major grid lines.</p>
+<p>Owner: PocAxis</p>
+<p>Flags: Read / Write</p>
+<p>Default value: POC_LINE_STYLE_SOLID</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxis--major-interval"></a><h3>The <code class="literal">“major-interval”</code> property</h3>
+<pre class="programlisting">  “major-interval”           <a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Major tick interval.</p>
+<p>Owner: PocAxis</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1e+06]</p>
+<p>Default value: 10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxis--minor-divisions"></a><h3>The <code class="literal">“minor-divisions”</code> property</h3>
+<pre class="programlisting">  “minor-divisions”          <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Minor tick interval on this axis.</p>
+<p>Owner: PocAxis</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [1,100]</p>
+<p>Default value: 5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxis--minor-grid"></a><h3>The <code class="literal">“minor-grid”</code> property</h3>
+<pre class="programlisting">  “minor-grid”               <a href="poc-Poc-Types.html#PocLineStyle"><span class="type">PocLineStyle</span></a></pre>
+<p>Line style for minor grid lines.</p>
+<p>Owner: PocAxis</p>
+<p>Flags: Read / Write</p>
+<p>Default value: POC_LINE_STYLE_DASH</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxis--tick-size"></a><h3>The <code class="literal">“tick-size”</code> property</h3>
+<pre class="programlisting">  “tick-size”                <a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<p>Tick size on this axis.</p>
+<p>Owner: PocAxis</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,100]</p>
+<p>Default value: 10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PocAxis--upper-bound"></a><h3>The <code class="literal">“upper-bound”</code> property</h3>
+<pre class="programlisting">  “upper-bound”              <a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Upper bound of range to plot on this axis.</p>
+<p>Owner: PocAxis</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [-1e+06,1e+06]</p>
+<p>Default value: 1</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocAxis.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="PocAxis-update"></a><h3>The <code class="literal">“update”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a href="PocAxis.html#PocAxis-struct"><span class="type">PocAxis</span></a> *pocaxis,
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-NO-HOOKS:CAPS">No Hooks</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="PocAxis.see-also"></a><h2>See Also</h2>
+<p><a href="PocPlot.html#PocPlot-struct"><span class="type">PocPlot</span></a> <a href="PocDataset.html#PocDataset-struct"><span class="type">PocDataset</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>

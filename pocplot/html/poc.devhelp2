@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="PocPlot Reference Manual" link="index.html" author="" name="poc" version="2" language="c">
+  <chapters>
+    <sub name="PocPlot Overview" link="pt01.html">
+      <sub name="Object Hierarchy" link="ch01.html"/>
+    </sub>
+    <sub name="PocPlot Objects and Types" link="pt02.html">
+      <sub name="PocPlot Plot Objects" link="Plot.html">
+        <sub name="PocPlot" link="PocPlot.html"/>
+        <sub name="PocDataset" link="PocDataset.html"/>
+        <sub name="PocDatasetSpline" link="PocDatasetSpline.html"/>
+        <sub name="PocAxis" link="PocAxis.html"/>
+      </sub>
+      <sub name="PocPlot Additional Objects" link="Legend.html">
+        <sub name="PocLegend" link="PocLegend.html"/>
+        <sub name="PocSample" link="PocSample.html"/>
+      </sub>
+      <sub name="PocPlot Types" link="Types.html">
+        <sub name="Poc Types" link="poc-Poc-Types.html"/>
+      </sub>
+      <sub name="PocPlot Internals" link="Other.html">
+        <sub name="Spline" link="poc-Spline.html"/>
+      </sub>
+    </sub>
+    <sub name="Symbols" link="pt03.html">
+      <sub name="API Index" link="api-index-full.html"/>
+      <sub name="Index of deprecated symbols" link="api-index-deprecated.html"/>
+    </sub>
+    <sub name="License" link="pt04.html"/>
+    <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="poc_plot_new ()" link="PocPlot.html#poc-plot-new"/>
+    <keyword type="function" name="poc_plot_set_enable_plot_fill ()" link="PocPlot.html#poc-plot-set-enable-plot-fill"/>
+    <keyword type="function" name="poc_plot_get_enable_plot_fill ()" link="PocPlot.html#poc-plot-get-enable-plot-fill"/>
+    <keyword type="function" name="poc_plot_get_plot_fill ()" link="PocPlot.html#poc-plot-get-plot-fill"/>
+    <keyword type="function" name="poc_plot_set_plot_fill ()" link="PocPlot.html#poc-plot-set-plot-fill"/>
+    <keyword type="function" name="poc_plot_get_border ()" link="PocPlot.html#poc-plot-get-border"/>
+    <keyword type="function" name="poc_plot_set_border ()" link="PocPlot.html#poc-plot-set-border"/>
+    <keyword type="function" name="poc_plot_set_title ()" link="PocPlot.html#poc-plot-set-title"/>
+    <keyword type="function" name="poc_plot_get_title ()" link="PocPlot.html#poc-plot-get-title"/>
+    <keyword type="function" name="poc_plot_set_x_axis ()" link="PocPlot.html#poc-plot-set-x-axis"/>
+    <keyword type="function" name="poc_plot_get_x_axis ()" link="PocPlot.html#poc-plot-get-x-axis"/>
+    <keyword type="function" name="poc_plot_set_y_axis ()" link="PocPlot.html#poc-plot-set-y-axis"/>
+    <keyword type="function" name="poc_plot_get_y_axis ()" link="PocPlot.html#poc-plot-get-y-axis"/>
+    <keyword type="function" name="poc_plot_set_axis ()" link="PocPlot.html#poc-plot-set-axis"/>
+    <keyword type="function" name="poc_plot_add_dataset ()" link="PocPlot.html#poc-plot-add-dataset"/>
+    <keyword type="function" name="poc_plot_remove_dataset ()" link="PocPlot.html#poc-plot-remove-dataset"/>
+    <keyword type="function" name="poc_plot_clear_dataset ()" link="PocPlot.html#poc-plot-clear-dataset"/>
+    <keyword type="function" name="poc_plot_find_dataset ()" link="PocPlot.html#poc-plot-find-dataset"/>
+    <keyword type="function" name="poc_plot_solo_dataset ()" link="PocPlot.html#poc-plot-solo-dataset"/>
+    <keyword type="function" name="poc_plot_axis_at_point ()" link="PocPlot.html#poc-plot-axis-at-point"/>
+    <keyword type="function" name="poc_plot_add_axis ()" link="PocPlot.html#poc-plot-add-axis"/>
+    <keyword type="function" name="poc_plot_remove_axis ()" link="PocPlot.html#poc-plot-remove-axis"/>
+    <keyword type="function" name="poc_plot_clear_axes ()" link="PocPlot.html#poc-plot-clear-axes"/>
+    <keyword type="function" name="poc_plot_notify_update ()" link="PocPlot.html#poc-plot-notify-update"/>
+    <keyword type="function" name="PocPlotDatasetForEachFunc ()" link="PocPlot.html#PocPlotDatasetForEachFunc"/>
+    <keyword type="function" name="poc_plot_dataset_foreach ()" link="PocPlot.html#poc-plot-dataset-foreach"/>
+    <keyword type="function" name="PocPlotAxisForEachFunc ()" link="PocPlot.html#PocPlotAxisForEachFunc"/>
+    <keyword type="function" name="poc_plot_axis_foreach ()" link="PocPlot.html#poc-plot-axis-foreach"/>
+    <keyword type="macro" name="POC_TYPE_PLOT" link="PocPlot.html#POC-TYPE-PLOT:CAPS"/>
+    <keyword type="struct" name="PocPlot" link="PocPlot.html#PocPlot-struct"/>
+    <keyword type="property" name="The “border” property" link="PocPlot.html#PocPlot--border"/>
+    <keyword type="property" name="The “enable-plot-fill” property" link="PocPlot.html#PocPlot--enable-plot-fill"/>
+    <keyword type="property" name="The “plot-fill” property" link="PocPlot.html#PocPlot--plot-fill"/>
+    <keyword type="property" name="The “title” property" link="PocPlot.html#PocPlot--title"/>
+    <keyword type="property" name="The “x-axis” property" link="PocPlot.html#PocPlot--x-axis"/>
+    <keyword type="property" name="The “y-axis” property" link="PocPlot.html#PocPlot--y-axis"/>
+    <keyword type="function" name="poc_dataset_new ()" link="PocDataset.html#poc-dataset-new"/>
+    <keyword type="function" name="poc_dataset_set_nickname ()" link="PocDataset.html#poc-dataset-set-nickname"/>
+    <keyword type="function" name="poc_dataset_get_nickname ()" link="PocDataset.html#poc-dataset-get-nickname"/>
+    <keyword type="function" name="poc_dataset_set_legend ()" link="PocDataset.html#poc-dataset-set-legend"/>
+    <keyword type="function" name="poc_dataset_get_legend ()" link="PocDataset.html#poc-dataset-get-legend"/>
+    <keyword type="function" name="poc_dataset_get_line_stroke ()" link="PocDataset.html#poc-dataset-get-line-stroke"/>
+    <keyword type="function" name="poc_dataset_set_line_stroke ()" link="PocDataset.html#poc-dataset-set-line-stroke"/>
+    <keyword type="function" name="poc_dataset_set_line_style ()" link="PocDataset.html#poc-dataset-set-line-style"/>
+    <keyword type="function" name="poc_dataset_get_line_style ()" link="PocDataset.html#poc-dataset-get-line-style"/>
+    <keyword type="function" name="poc_dataset_set_x_axis ()" link="PocDataset.html#poc-dataset-set-x-axis"/>
+    <keyword type="function" name="poc_dataset_get_x_axis ()" link="PocDataset.html#poc-dataset-get-x-axis"/>
+    <keyword type="function" name="poc_dataset_set_y_axis ()" link="PocDataset.html#poc-dataset-set-y-axis"/>
+    <keyword type="function" name="poc_dataset_get_y_axis ()" link="PocDataset.html#poc-dataset-get-y-axis"/>
+    <keyword type="function" name="poc_dataset_set_points ()" link="PocDataset.html#poc-dataset-set-points"/>
+    <keyword type="function" name="poc_dataset_get_points ()" link="PocDataset.html#poc-dataset-get-points"/>
+    <keyword type="function" name="poc_dataset_notify_update ()" link="PocDataset.html#poc-dataset-notify-update"/>
+    <keyword type="function" name="poc_dataset_invalidate ()" link="PocDataset.html#poc-dataset-invalidate"/>
+    <keyword type="function" name="poc_dataset_draw ()" link="PocDataset.html#poc-dataset-draw"/>
+    <keyword type="function" name="poc_dataset_set_points_array ()" link="PocDataset.html#poc-dataset-set-points-array"/>
+    <keyword type="macro" name="POC_TYPE_DATASET" link="PocDataset.html#POC-TYPE-DATASET:CAPS"/>
+    <keyword type="struct" name="struct PocDatasetClass" link="PocDataset.html#PocDatasetClass"/>
+    <keyword type="struct" name="PocDataset" link="PocDataset.html#PocDataset-struct"/>
+    <keyword type="property" name="The “legend” property" link="PocDataset.html#PocDataset--legend"/>
+    <keyword type="property" name="The “line-stroke” property" link="PocDataset.html#PocDataset--line-stroke"/>
+    <keyword type="property" name="The “line-style” property" link="PocDataset.html#PocDataset--line-style"/>
+    <keyword type="property" name="The “nickname” property" link="PocDataset.html#PocDataset--nickname"/>
+    <keyword type="property" name="The “points” property" link="PocDataset.html#PocDataset--points"/>
+    <keyword type="property" name="The “x-axis” property" link="PocDataset.html#PocDataset--x-axis"/>
+    <keyword type="property" name="The “y-axis” property" link="PocDataset.html#PocDataset--y-axis"/>
+    <keyword type="signal" name="The “update” signal" link="PocDataset.html#PocDataset-update"/>
+    <keyword type="function" name="poc_dataset_spline_new ()" link="PocDatasetSpline.html#poc-dataset-spline-new"/>
+    <keyword type="function" name="poc_dataset_spline_get_marker_stroke ()" link="PocDatasetSpline.html#poc-dataset-spline-get-marker-stroke"/>
+    <keyword type="function" name="poc_dataset_spline_set_marker_stroke ()" link="PocDatasetSpline.html#poc-dataset-spline-set-marker-stroke"/>
+    <keyword type="function" name="poc_dataset_spline_get_marker_fill ()" link="PocDatasetSpline.html#poc-dataset-spline-get-marker-fill"/>
+    <keyword type="function" name="poc_dataset_spline_set_marker_fill ()" link="PocDatasetSpline.html#poc-dataset-spline-set-marker-fill"/>
+    <keyword type="function" name="poc_dataset_spline_get_show_markers ()" link="PocDatasetSpline.html#poc-dataset-spline-get-show-markers"/>
+    <keyword type="function" name="poc_dataset_spline_set_show_markers ()" link="PocDatasetSpline.html#poc-dataset-spline-set-show-markers"/>
+    <keyword type="macro" name="POC_TYPE_DATASET_SPLINE" link="PocDatasetSpline.html#POC-TYPE-DATASET-SPLINE:CAPS"/>
+    <keyword type="struct" name="PocDatasetSpline" link="PocDatasetSpline.html#PocDatasetSpline-struct"/>
+    <keyword type="property" name="The “marker-fill” property" link="PocDatasetSpline.html#PocDatasetSpline--marker-fill"/>
+    <keyword type="property" name="The “marker-stroke” property" link="PocDatasetSpline.html#PocDatasetSpline--marker-stroke"/>
+    <keyword type="property" name="The “show-markers” property" link="PocDatasetSpline.html#PocDatasetSpline--show-markers"/>
+    <keyword type="function" name="poc_axis_new ()" link="PocAxis.html#poc-axis-new"/>
+    <keyword type="function" name="poc_axis_set_axis_mode ()" link="PocAxis.html#poc-axis-set-axis-mode"/>
+    <keyword type="function" name="poc_axis_get_axis_mode ()" link="PocAxis.html#poc-axis-get-axis-mode"/>
+    <keyword type="function" name="poc_axis_set_lower_bound ()" link="PocAxis.html#poc-axis-set-lower-bound"/>
+    <keyword type="function" name="poc_axis_get_lower_bound ()" link="PocAxis.html#poc-axis-get-lower-bound"/>
+    <keyword type="function" name="poc_axis_set_upper_bound ()" link="PocAxis.html#poc-axis-set-upper-bound"/>
+    <keyword type="function" name="poc_axis_get_upper_bound ()" link="PocAxis.html#poc-axis-get-upper-bound"/>
+    <keyword type="function" name="poc_axis_set_adjustment ()" link="PocAxis.html#poc-axis-set-adjustment"/>
+    <keyword type="function" name="poc_axis_get_adjustment ()" link="PocAxis.html#poc-axis-get-adjustment"/>
+    <keyword type="function" name="poc_axis_set_major_interval ()" link="PocAxis.html#poc-axis-set-major-interval"/>
+    <keyword type="function" name="poc_axis_get_major_interval ()" link="PocAxis.html#poc-axis-get-major-interval"/>
+    <keyword type="function" name="poc_axis_set_auto_interval ()" link="PocAxis.html#poc-axis-set-auto-interval"/>
+    <keyword type="function" name="poc_axis_get_auto_interval ()" link="PocAxis.html#poc-axis-get-auto-interval"/>
+    <keyword type="function" name="poc_axis_set_minor_divisions ()" link="PocAxis.html#poc-axis-set-minor-divisions"/>
+    <keyword type="function" name="poc_axis_get_minor_divisions ()" link="PocAxis.html#poc-axis-get-minor-divisions"/>
+    <keyword type="function" name="poc_axis_set_tick_size ()" link="PocAxis.html#poc-axis-set-tick-size"/>
+    <keyword type="function" name="poc_axis_get_tick_size ()" link="PocAxis.html#poc-axis-get-tick-size"/>
+    <keyword type="function" name="poc_axis_set_label_size ()" link="PocAxis.html#poc-axis-set-label-size"/>
+    <keyword type="function" name="poc_axis_get_label_size ()" link="PocAxis.html#poc-axis-get-label-size"/>
+    <keyword type="function" name="poc_axis_set_major_grid ()" link="PocAxis.html#poc-axis-set-major-grid"/>
+    <keyword type="function" name="poc_axis_get_major_grid ()" link="PocAxis.html#poc-axis-get-major-grid"/>
+    <keyword type="function" name="poc_axis_set_minor_grid ()" link="PocAxis.html#poc-axis-set-minor-grid"/>
+    <keyword type="function" name="poc_axis_get_minor_grid ()" link="PocAxis.html#poc-axis-get-minor-grid"/>
+    <keyword type="function" name="poc_axis_set_legend ()" link="PocAxis.html#poc-axis-set-legend"/>
+    <keyword type="function" name="poc_axis_get_legend ()" link="PocAxis.html#poc-axis-get-legend"/>
+    <keyword type="function" name="poc_axis_set_legend_size ()" link="PocAxis.html#poc-axis-set-legend-size"/>
+    <keyword type="function" name="poc_axis_get_legend_size ()" link="PocAxis.html#poc-axis-get-legend-size"/>
+    <keyword type="function" name="poc_axis_notify_update ()" link="PocAxis.html#poc-axis-notify-update"/>
+    <keyword type="function" name="poc_axis_draw_axis ()" link="PocAxis.html#poc-axis-draw-axis"/>
+    <keyword type="function" name="poc_axis_draw_grid ()" link="PocAxis.html#poc-axis-draw-grid"/>
+    <keyword type="function" name="poc_axis_size ()" link="PocAxis.html#poc-axis-size"/>
+    <keyword type="function" name="poc_axis_configure ()" link="PocAxis.html#poc-axis-configure"/>
+    <keyword type="function" name="poc_axis_get_range ()" link="PocAxis.html#poc-axis-get-range"/>
+    <keyword type="function" name="poc_axis_get_display_range ()" link="PocAxis.html#poc-axis-get-display-range"/>
+    <keyword type="function" name="poc_axis_linear_project ()" link="PocAxis.html#poc-axis-linear-project"/>
+    <keyword type="function" name="poc_axis_project ()" link="PocAxis.html#poc-axis-project"/>
+    <keyword type="macro" name="POC_TYPE_AXIS" link="PocAxis.html#POC-TYPE-AXIS:CAPS"/>
+    <keyword type="struct" name="struct PocAxisClass" link="PocAxis.html#PocAxisClass"/>
+    <keyword type="struct" name="PocAxis" link="PocAxis.html#PocAxis-struct"/>
+    <keyword type="property" name="The “adjustment” property" link="PocAxis.html#PocAxis--adjustment"/>
+    <keyword type="property" name="The “auto-interval” property" link="PocAxis.html#PocAxis--auto-interval"/>
+    <keyword type="property" name="The “axis-mode” property" link="PocAxis.html#PocAxis--axis-mode"/>
+    <keyword type="property" name="The “label-size” property" link="PocAxis.html#PocAxis--label-size"/>
+    <keyword type="property" name="The “legend” property" link="PocAxis.html#PocAxis--legend"/>
+    <keyword type="property" name="The “legend-size” property" link="PocAxis.html#PocAxis--legend-size"/>
+    <keyword type="property" name="The “lower-bound” property" link="PocAxis.html#PocAxis--lower-bound"/>
+    <keyword type="property" name="The “major-grid” property" link="PocAxis.html#PocAxis--major-grid"/>
+    <keyword type="property" name="The “major-interval” property" link="PocAxis.html#PocAxis--major-interval"/>
+    <keyword type="property" name="The “minor-divisions” property" link="PocAxis.html#PocAxis--minor-divisions"/>
+    <keyword type="property" name="The “minor-grid” property" link="PocAxis.html#PocAxis--minor-grid"/>
+    <keyword type="property" name="The “tick-size” property" link="PocAxis.html#PocAxis--tick-size"/>
+    <keyword type="property" name="The “upper-bound” property" link="PocAxis.html#PocAxis--upper-bound"/>
+    <keyword type="signal" name="The “update” signal" link="PocAxis.html#PocAxis-update"/>
+    <keyword type="function" name="poc_legend_new ()" link="PocLegend.html#poc-legend-new"/>
+    <keyword type="function" name="poc_legend_set_plot ()" link="PocLegend.html#poc-legend-set-plot"/>
+    <keyword type="function" name="poc_legend_get_plot ()" link="PocLegend.html#poc-legend-get-plot"/>
+    <keyword type="function" name="poc_legend_set_title_text_size ()" link="PocLegend.html#poc-legend-set-title-text-size"/>
+    <keyword type="function" name="poc_legend_get_title_text_size ()" link="PocLegend.html#poc-legend-get-title-text-size"/>
+    <keyword type="function" name="poc_legend_set_legend_text_size ()" link="PocLegend.html#poc-legend-set-legend-text-size"/>
+    <keyword type="function" name="poc_legend_get_legend_text_size ()" link="PocLegend.html#poc-legend-get-legend-text-size"/>
+    <keyword type="function" name="poc_legend_set_line_sample_size ()" link="PocLegend.html#poc-legend-set-line-sample-size"/>
+    <keyword type="function" name="poc_legend_get_line_sample_size ()" link="PocLegend.html#poc-legend-get-line-sample-size"/>
+    <keyword type="function" name="poc_legend_set_line_spacing ()" link="PocLegend.html#poc-legend-set-line-spacing"/>
+    <keyword type="function" name="poc_legend_get_line_spacing ()" link="PocLegend.html#poc-legend-get-line-spacing"/>
+    <keyword type="macro" name="POC_TYPE_LEGEND" link="PocLegend.html#POC-TYPE-LEGEND:CAPS"/>
+    <keyword type="struct" name="PocLegend" link="PocLegend.html#PocLegend-struct"/>
+    <keyword type="property" name="The “legend-text-size” property" link="PocLegend.html#PocLegend--legend-text-size"/>
+    <keyword type="property" name="The “line-sample-size” property" link="PocLegend.html#PocLegend--line-sample-size"/>
+    <keyword type="property" name="The “line-spacing” property" link="PocLegend.html#PocLegend--line-spacing"/>
+    <keyword type="property" name="The “plot” property" link="PocLegend.html#PocLegend--plot"/>
+    <keyword type="property" name="The “title-text-size” property" link="PocLegend.html#PocLegend--title-text-size"/>
+    <keyword type="function" name="poc_sample_new ()" link="PocSample.html#poc-sample-new"/>
+    <keyword type="function" name="poc_sample_set_dataset ()" link="PocSample.html#poc-sample-set-dataset"/>
+    <keyword type="function" name="poc_sample_get_dataset ()" link="PocSample.html#poc-sample-get-dataset"/>
+    <keyword type="macro" name="POC_TYPE_SAMPLE" link="PocSample.html#POC-TYPE-SAMPLE:CAPS"/>
+    <keyword type="struct" name="PocSample" link="PocSample.html#PocSample-struct"/>
+    <keyword type="property" name="The “dataset” property" link="PocSample.html#PocSample--dataset"/>
+    <keyword type="macro" name="poc_point_array_index()" link="poc-Poc-Types.html#poc-point-array-index"/>
+    <keyword type="macro" name="poc_point_array_len()" link="poc-Poc-Types.html#poc-point-array-len"/>
+    <keyword type="macro" name="poc_point_array_append_val()" link="poc-Poc-Types.html#poc-point-array-append-val"/>
+    <keyword type="function" name="poc_point_array_new ()" link="poc-Poc-Types.html#poc-point-array-new"/>
+    <keyword type="function" name="poc_point_array_sized_new ()" link="poc-Poc-Types.html#poc-point-array-sized-new"/>
+    <keyword type="function" name="poc_point_array_set_size ()" link="poc-Poc-Types.html#poc-point-array-set-size"/>
+    <keyword type="function" name="poc_point_array_append_vals ()" link="poc-Poc-Types.html#poc-point-array-append-vals"/>
+    <keyword type="function" name="poc_point_array_ref ()" link="poc-Poc-Types.html#poc-point-array-ref"/>
+    <keyword type="function" name="poc_point_array_unref ()" link="poc-Poc-Types.html#poc-point-array-unref"/>
+    <keyword type="macro" name="poc_double_array_index()" link="poc-Poc-Types.html#poc-double-array-index"/>
+    <keyword type="macro" name="poc_double_array_len()" link="poc-Poc-Types.html#poc-double-array-len"/>
+    <keyword type="macro" name="poc_double_array_append_vals()" link="poc-Poc-Types.html#poc-double-array-append-vals"/>
+    <keyword type="macro" name="poc_double_array_append_val()" link="poc-Poc-Types.html#poc-double-array-append-val"/>
+    <keyword type="function" name="poc_double_array_new ()" link="poc-Poc-Types.html#poc-double-array-new"/>
+    <keyword type="function" name="poc_double_array_sized_new ()" link="poc-Poc-Types.html#poc-double-array-sized-new"/>
+    <keyword type="function" name="poc_double_array_set_size ()" link="poc-Poc-Types.html#poc-double-array-set-size"/>
+    <keyword type="function" name="poc_double_array_ref ()" link="poc-Poc-Types.html#poc-double-array-ref"/>
+    <keyword type="function" name="poc_double_array_unref ()" link="poc-Poc-Types.html#poc-double-array-unref"/>
+    <keyword type="function" name="poc_enum_to_string ()" link="poc-Poc-Types.html#poc-enum-to-string"/>
+    <keyword type="function" name="poc_enum_from_string ()" link="poc-Poc-Types.html#poc-enum-from-string"/>
+    <keyword type="function" name="poc_line_style_get_dashes ()" link="poc-Poc-Types.html#poc-line-style-get-dashes"/>
+    <keyword type="enum" name="enum PocAxisMode" link="poc-Poc-Types.html#PocAxisMode"/>
+    <keyword type="enum" name="enum PocLineStyle" link="poc-Poc-Types.html#PocLineStyle"/>
+    <keyword type="function" name="poc_spline_get_points ()" link="poc-Spline.html#poc-spline-get-points"/>
+    <keyword type="function" name="poc_spline_get_vector ()" link="poc-Spline.html#poc-spline-get-vector"/>
+    <keyword type="constant" name="POC_AXIS_LINEAR" link="poc-Poc-Types.html#POC-AXIS-LINEAR:CAPS"/>
+    <keyword type="constant" name="POC_AXIS_LOG_OCTAVE" link="poc-Poc-Types.html#POC-AXIS-LOG-OCTAVE:CAPS"/>
+    <keyword type="constant" name="POC_AXIS_LOG_DECADE" link="poc-Poc-Types.html#POC-AXIS-LOG-DECADE:CAPS"/>
+    <keyword type="constant" name="POC_LINE_STYLE_SOLID" link="poc-Poc-Types.html#POC-LINE-STYLE-SOLID:CAPS"/>
+    <keyword type="constant" name="POC_LINE_STYLE_DOTS" link="poc-Poc-Types.html#POC-LINE-STYLE-DOTS:CAPS"/>
+    <keyword type="constant" name="POC_LINE_STYLE_DASH" link="poc-Poc-Types.html#POC-LINE-STYLE-DASH:CAPS"/>
+    <keyword type="constant" name="POC_LINE_STYLE_LONG_DASH" link="poc-Poc-Types.html#POC-LINE-STYLE-LONG-DASH:CAPS"/>
+    <keyword type="constant" name="POC_LINE_STYLE_DOT_DASH" link="poc-Poc-Types.html#POC-LINE-STYLE-DOT-DASH:CAPS"/>
+    <keyword type="constant" name="POC_LINE_STYLE_LONG_SHORT_DASH" link="poc-Poc-Types.html#POC-LINE-STYLE-LONG-SHORT-DASH:CAPS"/>
+    <keyword type="constant" name="POC_LINE_STYLE_DOT_DOT_DASH" link="poc-Poc-Types.html#POC-LINE-STYLE-DOT-DOT-DASH:CAPS"/>
+    <keyword type="member" name="PocDatasetClass.draw" link="PocDataset.html#PocDatasetClass.draw"/>
+    <keyword type="member" name="PocDatasetClass.invalidate" link="PocDataset.html#PocDatasetClass.invalidate"/>
+  </functions>
+</book>
