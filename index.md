@@ -30,3 +30,9 @@ memory fades).
 
 * Download from [GitHub](https://github.com/iarthair/xslt-extra)
 * Documentation [here](https://iarthair.github.io/xslt-extra/index.html)
+
+# halcyon-cmark
+
+A Python 3 interface to the cmark-gfm library using the Python C API.
+
+* Download from [GitHub](https://github.com/iarthair/halcyon-cmark)
